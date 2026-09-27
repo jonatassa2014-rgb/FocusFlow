@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#003ea8","secondary-fixed-dim":"#b8c4ff","on-surface":"#0b1c30","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","surface-bright":"#f8f9ff","on-secondary":"#ffffff","inverse-primary":"#b4c5ff","on-surface-variant":"#434655","on-primary-container":"#eeefff","background":"#f8f9ff","on-tertiary":"#ffffff","on-background":"#0b1c30","surface-dim":"#cbdbf5","inverse-on-surface":"#eaf1ff","inverse-surface":"#213145","secondary":"#3755c3","primary-container":"#2563eb","on-secondary-container":"#00217a","on-primary":"#ffffff","on-primary-fixed":"#00174b","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#dde1ff","on-secondary-fixed":"#001453","tertiary-container":"#7d4ce7","tertiary-fixed":"#e9ddff","surface-container-high":"#dce9ff","surface":"#f8f9ff","tertiary-fixed-dim":"#d0bcff","on-secondary-fixed-variant":"#173bab","on-tertiary-fixed":"#23005c","surface-container":"#e5eeff","surface-container-low":"#eff4ff","surface-container-highest":"#d3e4fe","surface-tint":"#0053db","tertiary":"#632ecd","on-tertiary-container":"#f6edff","primary-fixed":"#dbe1ff","outline":"#737686","secondary-container":"#708cfd","on-tertiary-fixed-variant":"#5516be","on-error":"#ffffff","primary":"#004ac6","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","gutter":"1.5rem","margin":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-xl":"2rem","gutter-mobile":"1rem"},fontFamily:{"metric-stat":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"]},fontSize:{"metric-stat":["32px",{lineHeight:"38px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-xl":["36px",{lineHeight:"44px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-hero":["48px",{lineHeight:"56px",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-xl-mobile":["26px",{lineHeight:"34px",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",fontWeight:"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center gap-space-sm bg-surface-container-low"><img alt="FocusFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vn6J2HboaetUMqGSzZwcTohi1TezSzSrB7oLuTe_IncHo048qO76_3L-Ilw35In7J_OSgU7iSgxVj-H3SGs1i3JoPoN4OVaUFcDiYt6IAu7yc6KHRcrexjJ2F-lQaZdQXAGJ7z8Eazcui6i2d_b8-zhubW2WsnqHNJy7HVwA931A5oolUiYZB6Jg9WNzi6Ao7pbnrynKV3XEJ3cxWxBTSToGeWZPwn7tA7jDO1_iNphFIfdc7jIz5mlOUf"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">FocusFlow</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">12 Week System</span></div></div><div class="px-gutter py-space-sm"><div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-body-lg">bolt</span><div><p class="font-label-sm text-label-sm text-on-surface-variant">Meta de Execução</p><p class="font-label-lg text-label-lg text-on-surface">Target: 85% WAM</p></div></div><span class="px-space-xs py-0.5 rounded bg-primary-container font-label-sm text-label-sm text-on-primary-container font-bold">W03</span></div></div><nav class="flex flex-col gap-1 px-space-md py-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="painel-de-execucao" href="#"><span class="material-symbols-outlined text-body-lg">speed</span><span>Painel de Execução</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="visao-inspiradora" href="#"><span class="material-symbols-outlined text-body-lg">explore</span><span>Visão Inspiradora</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="planejamento-do-ciclo" href="#"><span class="material-symbols-outlined text-body-lg">flag</span><span>Planejamento do Ciclo</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="agenda-de-blocos" href="#"><span class="material-symbols-outlined text-body-lg">calendar_clock</span><span>Agenda de Blocos</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placar-semanal" href="#"><span class="material-symbols-outlined text-body-lg">leaderboard</span><span>Placar Semanal &amp; WAM</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="configuracoes-e-conta" href="#"><span class="material-symbols-outlined text-body-lg">settings</span><span>Configurações &amp; Conta</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="bg-surface-container-highest p-space-sm rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary text-body-lg">pace</span><div><p class="font-label-sm text-label-sm text-on-surface-variant">Ritmo do Ano</p><p class="font-label-md text-label-md text-on-surface">12 Semanas = 1 Ano</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-body-md">info</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-semibold">Ciclo 1 • Semana 3 de 12 (Dia 18)</span></div><div class="hidden xl:flex items-center gap-space-xs w-40 bg-surface-container-highest rounded-full h-2 overflow-hidden"><div class="bg-primary-container h-full w-[25%]"></div></div><span class="hidden xl:inline-block font-label-sm text-label-sm text-on-surface-variant">25% concluído</span></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-md py-2 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-body-lg">add</span><span>Nova Tática</span></button><button aria-label="Notificações" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyeOG2SG9y2LZOxiQdtK5pXB_09lvHgJMmEuJQwbnBoRC4I8m3TCzyhPE3kVT3tw_g-uLdO4CAxPjuFfXmRs3B_K6xWoxfHbpahFj0Ts4v_hc5QAkfHD9o8ugSa2hem91rbxYtGHA_yQvQO1D4oFjZnw03AXh8AtGB5PFyJoDBFf-f-ZkXYgojfO39yh_3RR2Zkjma-WPpOw04TK36FO3sOfD7_Jk3-ginYW8ychQzwN_JP_wJnr1hlA"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Alexandre Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Performer</span></div><span class="material-symbols-outlined text-on-surface-variant text-body-md">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface px-gutter min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Active Sidebar Updater script to activate 'agenda-de-blocos' -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navLinks = document.querySelectorAll("aside nav a");
+      navLinks.forEach(link => {
+        if (link.getAttribute("data-path") === "agenda-de-blocos") {
+          link.className = "flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-bold shadow-sm transition-colors";
+          const icon = link.querySelector(".material-symbols-outlined");
+          if (icon) icon.className = "material-symbols-outlined text-body-lg text-on-primary-container";
+        } else {
+          link.className = "flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors";
+          const icon = link.querySelector(".material-symbols-outlined");
+          if (icon) icon.className = "material-symbols-outlined text-body-lg text-on-surface-variant";
+        }
+      });
+      // Synchronize brand logo and user avatar with verified data placeholders if present in shell
+      const shellLogo = document.querySelector("aside img");
+      if (shellLogo) shellLogo.src = "https://lh3.googleusercontent.com/aida/AEtjO1X8aH50asd3O6cIzMIcVHjGRjBKuIW3fuKjl4tyDqjHtbKJmoOIrTzrfRHRc7cXm2LkMioFuwvWB4zj0lTXl_psH7WYctOqI6iLoVwrcyQbJP_dnIVUziqdLBygoGLjoIibzH9QAjGGq8Wmi1kUNKwgLDfc-Pd_DWaCRs7je9VyN31FMd8OzquHHLBWcVSqPAWqX4SLMpdxwss9Fh-sfMe7W2uyIAh2MFXV2xUzvR5hhpmn5nmBPPFFD-M";
+      const shellAvatar = document.querySelector("header img");
+      if (shellAvatar) shellAvatar.src = "https://lh3.googleusercontent.com/aida/AEtjO1VBk6rFLGmhOrM3lIrOUP362SDZu90-NPV-ksDzb8Aj0i2yCZPe9UmfQOfxLV4ZCPHf1mTdhnLv7v_6gvL-eB7542AxmudqZOaLOX2V0oBp6Q1StXo0zYIB9VNa_DZmptFbhQaFFg6xW6pfdArkg5HVoihIHSLICRPibPAYcSPhil3VO-oWhoebEttPHTVwr0A10XPDXmt1QM8YPrwlUP26zzZAVbmoDN9qFByCJ8HlZEJOE50UzblxJkw";
+    });
+  </script>
+<!-- Page Header Container -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg mb-space-lg">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          EXECUÇÃO TEMPORAL BLINDADA • The 12 Week Year
+        </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+        Agenda de Blocos de Tempo
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        O tempo não é gerenciado; as escolhas e prioridades sim. Bloqueie suas semanas com antecedência para proteger o Deep Work e isolar o ruído operacional.
+      </p>
+</div>
+<!-- Quick Header CTA Actions -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-body-lg text-secondary">sync</span>
+<span>Sincronizar Google Agenda</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-body-lg">add_alarm</span>
+<span>Novo Bloco de Tempo</span>
+</button>
+</div>
+</div>
+<!-- Weekly Protection KPIs (Diagnóstico de Blindagem Temporal) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Strategic Blocks -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary/5 group-hover:scale-110 transition-transform"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">psychology</span>
+            Blocos Estratégicos (Deep Work)
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mr-1"></span> 80% Blindado
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-metric-stat text-metric-stat text-on-surface">12.0h</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 15h planejadas</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full transition-all duration-500" style="width: 80%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 flex items-center justify-between">
+<span>Meta: 3h/dia ininterruptas</span>
+<span class="text-tertiary font-semibold">+3h agendadas sex</span>
+</p>
+</div>
+</div>
+<!-- Card 2: Buffer Blocks -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/5 group-hover:scale-110 transition-transform"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">inbox</span>
+            Blocos Buffer (Operacional)
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-blue-50 text-blue-800 font-label-sm text-label-sm font-bold">
+            Controle Ativo
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-metric-stat text-metric-stat text-on-surface">6.5h</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 8h teto máx.</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 78%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 flex items-center justify-between">
+<span>Emails, Slack &amp; Reuniões</span>
+<span class="text-secondary font-semibold">1.5h restantes</span>
+</p>
+</div>
+</div>
+<!-- Card 3: Breakout Blocks -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-emerald-500/5 group-hover:scale-110 transition-transform"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-emerald-800 font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">spa</span>
+            Bloco Breakout (Recarga)
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-purple-50 text-purple-800 font-label-sm text-label-sm font-bold">
+            Programado
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-metric-stat text-metric-stat text-on-surface">1 bloco</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(3.0h livres)</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-emerald-600 h-full rounded-full transition-all duration-500" style="width: 100%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 flex items-center justify-between">
+<span>Sexta-feira 14h - 17h</span>
+<span class="text-emerald-700 font-semibold">Inviolável</span>
+</p>
+</div>
+</div>
+<!-- Card 4: Unallocated Operating Bandwidth -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-surface-dim group-hover:scale-110 transition-transform"></div>
+<div>
+<div class="flex items-center justify-between gap-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">schedule</span>
+            Margem Livre Operacional
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+            Margem Segura
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-2">
+<span class="font-metric-stat text-metric-stat text-on-surface">18.5h</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">de 40h semanais</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 46%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+          Almoço, imprevistos e rotinas leves
+        </p>
+</div>
+</div>
+</div>
+<!-- Agenda Control Toolbar & Legend -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-md mb-space-lg">
+<!-- Week Selector Navigation -->
+<div class="flex flex-wrap items-center gap-space-sm w-full lg:w-auto">
+<div class="flex items-center bg-surface-container rounded-lg p-1">
+<button aria-label="Semana anterior" class="p-1.5 rounded-md hover:bg-surface-container-lowest text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">chevron_left</span>
+</button>
+<button class="px-space-md py-1 rounded-md bg-surface-container-lowest shadow-sm font-label-md text-label-md text-on-surface font-bold" type="button">
+          Hoje
+        </button>
+<button aria-label="Próxima semana" class="p-1.5 rounded-md hover:bg-surface-container-lowest text-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-body-lg">date_range</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Semana 03 de 12</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(20 Jan – 26 Jan 2025)</span>
+</div>
+<div class="hidden sm:flex items-center bg-surface-container rounded-lg p-1">
+<button class="px-space-md py-1 rounded-md bg-primary-container text-on-primary font-label-md text-label-md shadow-sm" type="button">
+          Visão Semanal (Grade)
+        </button>
+<button class="px-space-md py-1 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+          Visão Diária (Timeline)
+        </button>
+</div>
+</div>
+<!-- Metodology Interactive Legend Chips -->
+<div class="flex flex-wrap items-center gap-space-xs w-full lg:w-auto">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-purple-900 font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-purple-600"></span>
+<span>Strategic Block (Deep Work)</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-900 font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+<span>Buffer Block (Admin &amp; Mensagens)</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-900 font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+<span>Breakout Block (Recarga &amp; Clareza)</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 text-amber-900 font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+<span>WAM (Accountability)</span>
+</div>
+</div>
+</div>
+<!-- Main Layout Grid: Timetable Schedule (Left/Center) + Sidebar Tactics & Guidelines (Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Section: 6-Day Weekly Block Schedule (Columns 1 to 9 on XL) -->
+<div class="xl:col-span-9 bg-surface-container-lowest rounded-2xl shadow-sm p-space-md overflow-x-auto relative">
+<div class="min-w-[900px]">
+<!-- Days Header -->
+<div class="grid grid-cols-12 gap-2 pb-space-sm mb-space-sm border-b-0">
+<div class="col-span-1 text-center font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider py-2">
+            Horário
+          </div>
+<!-- Monday -->
+<div class="col-span-2 text-center p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase">Segunda</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">20 Jan</span>
+</div>
+<!-- Tuesday (Today / Active Highlight) -->
+<div class="col-span-2 text-center p-2 rounded-lg bg-primary-container text-on-primary shadow-sm relative overflow-hidden">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider block text-on-primary-container/80">Hoje</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">21 Jan (Ter)</span>
+</div>
+<!-- Wednesday -->
+<div class="col-span-2 text-center p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase">Quarta</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">22 Jan</span>
+</div>
+<!-- Thursday -->
+<div class="col-span-2 text-center p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase">Quinta</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">23 Jan</span>
+</div>
+<!-- Friday -->
+<div class="col-span-2 text-center p-2 rounded-lg bg-surface-container-low">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase">Sexta</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">24 Jan</span>
+</div>
+<!-- Saturday morning -->
+<div class="col-span-1 text-center p-2 rounded-lg bg-surface-container-low/60">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Sáb</span>
+<span class="font-label-lg text-label-lg text-on-surface">25</span>
+</div>
+</div>
+<!-- Schedule Grid Matrix -->
+<div class="grid grid-cols-12 gap-2 relative">
+<!-- Subtle Real-Time Indicator Line (Simulated Tuesday 14:30) -->
+<div class="absolute left-[8.33%] right-0 top-[385px] z-20 pointer-events-none flex items-center">
+<span class="w-2.5 h-2.5 rounded-full bg-error -ml-1.5 shadow-sm"></span>
+<div class="w-full h-0.5 bg-error/70"></div>
+<span class="bg-error text-on-error font-label-sm text-label-sm px-1.5 py-0.5 rounded shadow-sm shrink-0 mr-2">14:30 Agora</span>
+</div>
+<!-- Time Gutter (07:00 to 18:00) -->
+<div class="col-span-1 flex flex-col font-label-sm text-label-sm text-on-surface-variant font-medium justify-between py-2 pr-2 text-right select-none space-y-10">
+<div>08:00</div>
+<div>09:00</div>
+<div>10:00</div>
+<div>11:00</div>
+<div>12:00</div>
+<div>13:00</div>
+<div>14:00</div>
+<div>15:00</div>
+<div>16:00</div>
+<div>17:00</div>
+<div>18:00</div>
+</div>
+<!-- MONDAY COLUMN -->
+<div class="col-span-2 flex flex-col gap-2 relative bg-surface-container-low/40 rounded-xl p-1.5">
+<!-- 08:30 - 09:30 WAM Block -->
+<div class="p-2.5 rounded-lg bg-amber-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-amber-200/80 text-amber-900">WAM (1h)</span>
+<span class="font-label-sm text-label-sm text-amber-900 font-semibold">08:30 - 09:30</span>
+</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Reunião WAM &amp; Fechamento do Placar</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Revisão do score da Semana 2 e alinhamento de compromissos.</p>
+<div class="mt-2 flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-700 font-bold">
+<span class="material-symbols-outlined text-sm">check_circle</span> Realizado (88%)
+                </span>
+</div>
+</div>
+<!-- 10:00 - 12:00 Buffer Block -->
+<div class="p-2.5 rounded-lg bg-blue-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-blue-200/80 text-blue-900">Buffer Block (2h)</span>
+<span class="font-label-sm text-label-sm text-blue-900 font-semibold">10:00 - 12:00</span>
+</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Triagem de E-mails, Slack &amp; Demanda Operacional</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Limpeza total da caixa e alinhamento com equipe.</p>
+<div class="mt-2 flex items-center gap-1.5">
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Inbox Zero</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">8 chamados</span>
+</div>
+</div>
+<!-- Lunch Interval Placeholder -->
+<div class="py-1 text-center font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+              12:00 Almoço &amp; Descompressão
+            </div>
+<!-- 14:00 - 17:00 Strategic Block -->
+<div class="p-3 rounded-lg bg-purple-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] uppercase font-bold bg-purple-200 text-purple-900 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-purple-700"></span> Strategic Block (3h)
+                </span>
+<span class="font-label-sm text-label-sm text-purple-950 font-bold">14:00 - 17:00</span>
+</div>
+<div class="font-label-sm text-label-sm text-purple-800 uppercase font-semibold">Meta 1 • Receita SaaS</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold mt-0.5 leading-tight">Disparo de 25 Convites Personalizados &amp; Prospecção Ativa</h2>
+<ul class="mt-2 space-y-1.5">
+<li class="flex items-center gap-1.5 text-body-sm text-on-surface font-body-sm">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_box</span>
+<span class="line-through text-on-surface-variant">Filtrar ICP no LinkedIn Sales Nav</span>
+</li>
+<li class="flex items-center gap-1.5 text-body-sm text-on-surface font-body-sm">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_box</span>
+<span class="line-through text-on-surface-variant">Personalizar mensagens chave</span>
+</li>
+<li class="flex items-center gap-1.5 text-body-sm text-on-surface font-body-sm">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_box</span>
+<span class="line-through text-on-surface-variant">Disparar primeiros 25 convites</span>
+</li>
+</ul>
+<div class="mt-3 pt-2 flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-emerald-700 font-bold">Concluído 100%</span>
+<span class="text-on-surface-variant">Zero Interrupções</span>
+</div>
+</div>
+</div>
+<!-- TUESDAY COLUMN (TODAY - HIGHLIGHTED) -->
+<div class="col-span-2 flex flex-col gap-2 relative bg-surface-container rounded-xl p-1.5 shadow-sm">
+<!-- 08:30 - 11:30 Strategic Block (Concluído) -->
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] uppercase font-bold bg-purple-100 text-purple-900 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-purple-700"></span> Strategic (3h)
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">08:30 - 11:30</span>
+</div>
+<div class="font-label-sm text-label-sm text-tertiary uppercase font-semibold">Meta 2 • Retenção &amp; Produto</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold mt-0.5 leading-tight">Arquitetura &amp; Telas Core do Módulo Mobile</h2>
+<div class="mt-2 space-y-1">
+<div class="flex items-center gap-1.5 text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_box</span>
+<span class="line-through text-on-surface-variant">Wireframes da tela de execução</span>
+</div>
+<div class="flex items-center gap-1.5 text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_box</span>
+<span class="line-through text-on-surface-variant">Validação do flow de score offline</span>
+</div>
+</div>
+<span class="mt-2 inline-flex items-center gap-1 text-[11px] text-emerald-700 font-bold">
+<span class="material-symbols-outlined text-xs">verified</span> Execução Impecável
+              </span>
+</div>
+<!-- 11:30 - 12:30 Buffer Block -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-blue-100 text-blue-900">Buffer Block (1h)</span>
+<span class="font-label-sm text-label-sm text-blue-900 font-semibold">11:30 - 12:30</span>
+</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Caixa Zero, Respostas Clientes &amp; Faturas</h2>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant">14 e-mails processados em lote.</span>
+</div>
+<!-- 14:00 - 16:00 Strategic Block (IN EXECUTION NOW) -->
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-md flex flex-col relative overflow-hidden">
+<div class="absolute top-0 right-0 w-2 h-full bg-primary-container"></div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] uppercase font-bold bg-primary-container text-on-primary flex items-center gap-1 animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span> Em Execução Agora
+                </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">14:00 - 16:00</span>
+</div>
+<div class="font-label-sm text-label-sm text-primary uppercase font-bold">Meta 1 • Demonstrações de Produto</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold mt-0.5 leading-tight">Calls de Demonstração Qualificadas (Demo 01 &amp; 02)</h2>
+<div class="mt-2.5 space-y-1.5">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface line-through text-on-surface-variant">Demo 1: Grupo Nexo (Diretoria de Operações)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold text-primary">Demo 2: Startups Growth Labs (15h30)</span>
+</label>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Modo Não Perturbe Ativo</span>
+<button class="text-xs px-2 py-1 rounded bg-primary-container text-on-primary font-bold hover:bg-primary" type="button">Completar Bloco</button>
+</div>
+</div>
+<!-- 16:30 - 17:30 Buffer Block -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-blue-100 text-blue-900">Buffer Block (1h)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">16:30 - 17:30</span>
+</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Follow-up das Propostas Comerciais</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Envio de resumos e minutas contratuais pós-demo.</p>
+</div>
+</div>
+<!-- WEDNESDAY COLUMN -->
+<div class="col-span-2 flex flex-col gap-2 relative bg-surface-container-low/40 rounded-xl p-1.5">
+<!-- 09:00 - 12:00 Strategic Block -->
+<div class="p-3 rounded-lg bg-purple-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] uppercase font-bold bg-purple-200 text-purple-900 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-purple-700"></span> Strategic (3h)
+                </span>
+<span class="font-label-sm text-label-sm text-purple-950 font-bold">09:00 - 12:00</span>
+</div>
+<div class="font-label-sm text-label-sm text-purple-800 uppercase font-semibold">Meta 1 • Fechamento B2B</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold mt-0.5 leading-tight">Otimização de Pitch Deck &amp; Matriz de Objeções</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Refinar cases de ROI e material complementar de apresentação.</p>
+<div class="mt-3 flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[10px] bg-purple-100 text-purple-900 font-semibold">Deep Focus</span>
+<span class="px-2 py-0.5 rounded text-[10px] bg-surface-container text-on-surface-variant font-semibold">Sem reuniões</span>
+</div>
+</div>
+<!-- Lunch Interval Placeholder -->
+<div class="py-1 text-center font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+              12:00 Almoço
+            </div>
+<!-- 14:00 - 15:30 Buffer Block -->
+<div class="p-2.5 rounded-lg bg-blue-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-blue-200/80 text-blue-900">Buffer Block (1.5h)</span>
+<span class="font-label-sm text-label-sm text-blue-900 font-semibold">14:00 - 15:30</span>
+</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Reuniões Internas Operacionais em Lote</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sincronização com o time de engenharia e suporte.</p>
+</div>
+<!-- Open Time Slot -->
+<div class="p-3 rounded-lg bg-surface-container/30 flex flex-col items-center justify-center text-center py-6">
+<span class="material-symbols-outlined text-outline-variant text-base">hourglass_empty</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Margem Livre de Execução</span>
+<span class="text-[11px] text-on-surface-variant/70">16:00 - 18:00</span>
+</div>
+</div>
+<!-- THURSDAY COLUMN -->
+<div class="col-span-2 flex flex-col gap-2 relative bg-surface-container-low/40 rounded-xl p-1.5">
+<!-- 08:30 - 11:30 Strategic Block -->
+<div class="p-3 rounded-lg bg-purple-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] uppercase font-bold bg-purple-200 text-purple-900 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-purple-700"></span> Strategic (3h)
+                </span>
+<span class="font-label-sm text-label-sm text-purple-950 font-bold">08:30 - 11:30</span>
+</div>
+<div class="font-label-sm text-label-sm text-purple-800 uppercase font-semibold">Meta 2 • Validação Beta</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold mt-0.5 leading-tight">Testes com os Primeiros 50 Usuários Beta</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Análise das métricas de ativação e onboarding guiado.</p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-[11px] text-purple-900 font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">flag</span> 2 Táticas vinculadas
+                </span>
+<span class="text-xs px-2 py-0.5 rounded bg-purple-200 text-purple-950 font-semibold">Agendado</span>
+</div>
+</div>
+<!-- Lunch Interval Placeholder -->
+<div class="py-1 text-center font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+              12:00 Almoço
+            </div>
+<!-- 14:00 - 15:00 Buffer Block -->
+<div class="p-2.5 rounded-lg bg-blue-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-blue-200/80 text-blue-900">Buffer Block (1h)</span>
+<span class="font-label-sm text-label-sm text-blue-900 font-semibold">14:00 - 15:00</span>
+</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Resolução de Pendências Financeiras &amp; NF</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pagamentos, conciliação e envio de comprovantes.</p>
+</div>
+<!-- Open Time Slot -->
+<div class="p-3 rounded-lg bg-surface-container/30 flex flex-col items-center justify-center text-center py-6">
+<span class="material-symbols-outlined text-outline-variant text-base">check</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Margem Operacional</span>
+<span class="text-[11px] text-on-surface-variant/70">15:30 - 18:00</span>
+</div>
+</div>
+<!-- FRIDAY COLUMN -->
+<div class="col-span-2 flex flex-col gap-2 relative bg-surface-container-low/40 rounded-xl p-1.5">
+<!-- 09:00 - 11:00 Buffer Block -->
+<div class="p-2.5 rounded-lg bg-blue-50 shadow-sm hover:shadow transition-shadow flex flex-col">
+<div class="flex items-center justify-between mb-1">
+<span class="px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-blue-200/80 text-blue-900">Buffer Block (2h)</span>
+<span class="font-label-sm text-label-sm text-blue-900 font-semibold">09:00 - 11:00</span>
+</div>
+<h2 class="font-label-md text-label-md text-on-surface font-bold leading-tight">Fechamento Administrativo &amp; Limpeza Geral</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Zerar tickets em aberto e organizar documentos da semana.</p>
+</div>
+<!-- Lunch Interval Placeholder -->
+<div class="py-1 text-center font-label-sm text-label-sm text-on-surface-variant/60 uppercase tracking-widest">
+              12:00 Almoço
+            </div>
+<!-- 14:00 - 17:00 Breakout Block (SAGRADO) -->
+<div class="p-3.5 rounded-lg bg-emerald-50 shadow-sm hover:shadow transition-shadow flex flex-col relative overflow-hidden">
+<div class="absolute -right-3 -top-3 w-12 h-12 bg-emerald-200/50 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-emerald-800 text-lg">spa</span>
+</div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full text-[10px] uppercase font-bold bg-emerald-200 text-emerald-950 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-700"></span> Breakout Block (3h)
+                </span>
+<span class="font-label-sm text-label-sm text-emerald-950 font-bold">14:00 - 17:00</span>
+</div>
+<div class="font-label-sm text-label-sm text-emerald-800 uppercase font-semibold">Recuperação &amp; Clareza Mental</div>
+<h2 class="font-label-md text-label-md text-emerald-950 font-bold mt-0.5 leading-tight">Tarde de Descompressão, Leitura &amp; Renovação Energética</h2>
+<p class="font-body-sm text-body-sm text-emerald-900 mt-1.5">
+                Zero trabalho operacional. Caminhada reflexiva, leitura do livro de estratégia e recarga para a Semana 4.
+              </p>
+<div class="mt-3 pt-2 flex items-center justify-between">
+<span class="text-[11px] font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">lock</span> Inviolável
+                </span>
+<span class="text-xs px-2 py-0.5 rounded bg-emerald-200 text-emerald-950 font-bold">Sagrado</span>
+</div>
+</div>
+</div>
+<!-- SATURDAY COLUMN (MORNING ONLY) -->
+<div class="col-span-1 flex flex-col gap-2 relative bg-surface-container-low/20 rounded-xl p-1 text-center">
+<div class="p-2 rounded-lg bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">09:00</span>
+<span class="material-symbols-outlined text-primary text-base mt-1">self_improvement</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-1 font-semibold leading-tight">Rotina Matinal</span>
+<span class="text-[10px] text-on-surface-variant mt-0.5">Corrida &amp; Família</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container/30 flex flex-col items-center justify-center py-8">
+<span class="text-[10px] uppercase font-bold text-on-surface-variant/70">Desconexão</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Section: Unallocated Tactics & Moran's Golden Rules (Columns 10 to 12 on XL) -->
+<div class="xl:col-span-3 flex flex-col gap-space-lg">
+<!-- Card: Unscheduled Tactics Needing Allocation -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">pending_actions</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Táticas a Alocar</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">2 Pendentes</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Táticas planejadas para a Semana 3 que ainda não têm bloco de tempo reservado.
+        </p>
+<!-- Unscheduled Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors mb-space-sm flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-bold uppercase text-tertiary">Meta 2 • Produto</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-xs">timer</span> 1.5h
+            </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">
+            Revisar gravações de usabilidade dos 10 primeiros usuários
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Mapear fricções e quedas no onboarding mobile.
+          </p>
+<div class="mt-space-md flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-amber-800 bg-amber-50 px-2 py-0.5 rounded font-semibold">Prioridade Alta</span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-tertiary-container text-on-tertiary font-label-sm text-label-sm font-semibold hover:opacity-90 shadow-sm transition-opacity" type="button">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Encaixar em Bloco</span>
+</button>
+</div>
+</div>
+<!-- Unscheduled Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col">
+<div class="flex items-center justify-between gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm font-bold uppercase text-primary">Meta 3 • Operações</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-xs">timer</span> 1.0h
+            </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">
+            Atualizar dashboard de churn e métricas de renovação
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Consolidar relatórios de NPS e feedback de cancelamento.
+          </p>
+<div class="mt-space-md flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-blue-800 bg-blue-50 px-2 py-0.5 rounded font-semibold">Bloco Buffer</span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:opacity-90 shadow-sm transition-opacity" type="button">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Encaixar em Bloco</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Moran's Methodology Golden Rules Card -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-tertiary text-headline-sm">verified_user</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Regras de Ouro de Moran</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Princípios inegociáveis do livro <em>The 12 Week Year</em> para blindar sua semana:
+        </p>
+<div class="space-y-space-md">
+<div class="flex gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-purple-100 text-purple-900 font-bold text-xs flex items-center justify-center shrink-0">1</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-bold">Nunca aceite reuniões no Deep Work</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Blocos Estratégicos exigem desconexão integral (sem abas extras, sem celular). Trate-os como uma cirurgia marcada.
+              </p>
+</div>
+</div>
+<div class="flex gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-blue-100 text-blue-900 font-bold text-xs flex items-center justify-center shrink-0">2</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-bold">Imprevisto vai para o Buffer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Se surgir uma urgência durante o foco estratégico, anote-a rapidamente e só a resolva no próximo Bloco de Buffer.
+              </p>
+</div>
+</div>
+<div class="flex gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-900 font-bold text-xs flex items-center justify-center shrink-0">3</span>
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-bold">Breakout não é opcional</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                A performance em sprint exige recuperação proporcional. Quem pula o Breakout perde 30% da potência na semana seguinte.
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-sm rounded-lg bg-surface-container flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-base">menu_book</span>
+<span>Capítulo 11: "Assuma o Controle do Seu Tempo"</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation / Flow Controller Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md mt-space-xl pt-space-lg pb-space-lg">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-body-lg">arrow_back</span>
+<span>Voltar ao Planejamento do Ciclo</span>
+</a>
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden md:inline-block">Próximo passo metodológico:</span>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary transition-all" href="#">
+<span>Ir para o Placar Semanal &amp; WAM</span>
+<span class="material-symbols-outlined text-body-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</div></main></div></body></html>

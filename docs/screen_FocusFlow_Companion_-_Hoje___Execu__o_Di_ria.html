@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#632ecd", "primary": "#004ac6", "on-tertiary-fixed": "#23005c", "secondary-fixed-dim": "#b8c4ff", "tertiary-fixed-dim": "#d0bcff", "on-tertiary": "#ffffff", "on-surface": "#0b1c30", "error-container": "#ffdad6", "outline-variant": "#c3c6d7", "on-secondary-fixed-variant": "#173bab", "secondary-fixed": "#dde1ff", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "on-secondary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-surface-variant": "#434655", "surface-bright": "#f8f9ff", "inverse-primary": "#b4c5ff", "primary-container": "#2563eb", "on-primary-container": "#eeefff", "surface-tint": "#0053db", "surface": "#f8f9ff", "surface-container": "#e5eeff", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed": "#001453", "inverse-surface": "#213145", "tertiary-fixed": "#e9ddff", "secondary": "#3755c3", "surface-dim": "#cbdbf5", "on-primary-fixed": "#00174b", "tertiary-container": "#7d4ce7", "primary-fixed-dim": "#b4c5ff", "surface-variant": "#d3e4fe", "on-primary": "#ffffff", "surface-container-high": "#dce9ff", "on-error": "#ffffff", "secondary-container": "#708cfd", "primary-fixed": "#dbe1ff", "on-background": "#0b1c30", "on-tertiary-container": "#f6edff", "on-tertiary-fixed-variant": "#5516be", "background": "#f8f9ff", "on-primary-fixed-variant": "#003ea8", "on-secondary-container": "#00217a", "outline": "#737686", "error": "#ba1a1a", "surface-container-low": "#eff4ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "margin": "2rem", "space-xl": "2rem", "gutter": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "label-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "metric-stat": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, "fontSize": { "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "display-hero": ["48px", { "lineHeight": "56px", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-xl-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "display-hero-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "metric-stat": ["32px", { "lineHeight": "38px", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary/10"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-2"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #2563eb
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1X8aH50asd3O6cIzMIcVHjGRjBKuIW3fuKjl4tyDqjHtbKJmoOIrTzrfRHRc7cXm2LkMioFuwvWB4zj0lTXl_psH7WYctOqI6iLoVwrcyQbJP_dnIVUziqdLBygoGLjoIibzH9QAjGGq8Wmi1kUNKwgLDfc-Pd_DWaCRs7je9VyN31FMd8OzquHHLBWcVSqPAWqX4SLMpdxwss9Fh-sfMe7W2uyIAh2MFXV2xUzvR5hhpmn5nmBPPFFD-M"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-none">FocusFlow</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Hoje</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="tracking-wide">Semana 03 • Dia 18</span></div><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VBk6rFLGmhOrM3lIrOUP362SDZu90-NPV-ksDzb8Aj0i2yCZPe9UmfQOfxLV4ZCPHf1mTdhnLv7v_6gvL-eB7542AxmudqZOaLOX2V0oBp6Q1StXo0zYIB9VNa_DZmptFbhQaFFg6xW6pfdArkg5HVoihIHSLICRPibPAYcSPhil3VO-oWhoebEttPHTVwr0A10XPDXmt1QM8YPrwlUP26zzZAVbmoDN9qFByCJ8HlZEJOE50UzblxJkw"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface"></span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-12 space-y-5">
+<!-- Anchor & Greeting Section -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-start justify-between">
+<div class="flex flex-col min-w-0">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight leading-tight">
+          Bom dia, Alexandre
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span>
+          Quarta-feira, 23 de Abril (Dia 18 de 84)
+        </p>
+</div>
+<!-- Lead Score WAM Pill -->
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">stars</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface leading-none">88.5% WAM</span>
+<span class="font-label-sm text-[9px] text-primary leading-none uppercase tracking-wider font-bold">Padrão Ouro</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Cycle 12-Week Progress Card -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col space-y-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+          Ciclo Q2 • Semana 3 de 12
+        </span>
+<span class="text-primary font-bold">25% percorrido</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 25%"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-on-surface-variant font-label-sm">
+<span>Sem 01</span>
+<span class="text-primary font-bold">Sem 03 (Hoje)</span>
+<span>Sem 12 (Fechamento)</span>
+</div>
+</div>
+</section>
+<!-- Ritual 2 Min - Cartão de Bolso da Visão -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-container via-primary to-secondary p-4 text-on-primary shadow-md">
+<div class="absolute -right-4 -top-6 w-28 h-28 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-primary-container bg-white/20 px-2 py-0.5 rounded-full font-bold">Ritual 2 Minutos</span>
+<h2 class="font-headline-sm text-headline-sm text-on-primary leading-tight mt-0.5">Visão de Longo Prazo</h2>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-md font-label-sm text-label-sm text-on-primary flex items-center gap-1 transition-all" id="toggleVisionModal">
+<span>Lido Hoje</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-white/90 mt-2.5 line-clamp-2 italic">
+      “Alcançar tração consolidada de R$ 500k ARR e liberdade geográfica com saúde corporal plena e foco imperturbável...”
+    </p>
+<div class="mt-3 pt-2.5 border-t border-white/10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-white/80">Revisão obrigatória pré-notificações</span>
+<button class="inline-flex items-center gap-1 text-on-primary font-label-sm text-label-sm underline underline-offset-2" id="openPocketCard">
+        Expandir Cartão
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Active Focus Block Timer Hero -->
+<section class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-primary font-bold">
+          Bloco Estratégico Ativo
+        </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-0.5 rounded-full">
+        09:00 - 12:00 (3h)
+      </span>
+</div>
+<!-- Timer Visual Centerpiece -->
+<div class="flex flex-col items-center justify-center my-2 p-4 rounded-xl bg-surface-container-low">
+<div class="flex items-baseline gap-1">
+<span class="font-display-hero-mobile text-display-hero-mobile text-on-surface tracking-tight font-extrabold tabular-nums" id="timerDisplay">
+          01:42:18
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">restantes</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">notifications_paused</span>
+<span>Deep Work Blindado • Slack DND Ativado</span>
+</div>
+<!-- Micro linked tactic indicator -->
+<div class="mt-3 flex items-center gap-2 max-w-full text-center px-2">
+<span class="material-symbols-outlined text-[16px] text-primary flex-shrink-0">bolt</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">
+          Tática: <span class="font-semibold">Cold outreach p/ 15 diretores logísticos</span>
+</p>
+</div>
+</div>
+<!-- Quick Touch Timer Controls -->
+<div class="grid grid-cols-2 gap-2 mt-3">
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" id="pauseTimerBtn">
+<span class="material-symbols-outlined text-[18px]">pause</span>
+<span>Pausar</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all active:scale-[0.98]" id="completeBlockBtn">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Concluir (+25% WAM)</span>
+</button>
+</div>
+</section>
+<!-- Daily Tactics (Lead Indicators) -->
+<section class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Táticas de Hoje</h2>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">Lead Indicators</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-1 rounded-full">
+<strong class="text-on-surface" id="tacticsCompletedCount">1</strong> de 4 (25%)
+      </span>
+</div>
+<!-- Interactive Tactic Checklist Stack -->
+<div class="flex flex-col space-y-2.5" id="tacticsContainer">
+<!-- Item 1: Done -->
+<div class="tactic-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-start gap-3 transition-all duration-200">
+<button class="tactic-toggle mt-0.5 w-6 h-6 rounded bg-primary text-on-primary flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" data-checked="true">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<div class="flex flex-col min-w-0 flex-1">
+<p class="tactic-text font-body-md text-body-md text-on-surface-variant line-through select-none truncate">
+            Realizar 8 follow-ups corporativos pipeline B2B
+          </p>
+<div class="flex items-center gap-2 mt-1.5 flex-wrap">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Bloco Buffer</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 flex items-center gap-0.5 font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> +25% WAM
+            </span>
+</div>
+</div>
+</div>
+<!-- Item 2: Active & Focused -->
+<div class="tactic-card bg-surface-container-lowest rounded-xl p-3.5 shadow-md flex items-start gap-3 relative overflow-hidden bg-gradient-to-r from-surface-container-low to-surface-container-lowest transition-all duration-200">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<button class="tactic-toggle mt-0.5 w-6 h-6 rounded bg-surface-container-high text-transparent flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" data-checked="false">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-label-sm text-[10px] px-1.5 py-0.2 rounded bg-primary text-on-primary uppercase font-bold">Em Foco</span>
+<span class="font-label-sm text-[10px] text-amber-600 font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">priority_high</span> Crítica
+            </span>
+</div>
+<p class="tactic-text font-body-md text-body-md text-on-surface font-semibold select-none leading-snug">
+            Executar cold outreach personalizado para 15 diretores logísticos
+          </p>
+<div class="flex items-center gap-2 mt-1.5 flex-wrap">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Bloco Estratégico Matinal</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container-high text-primary">Meta 1: Tração</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Pending -->
+<div class="tactic-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-start gap-3 transition-all duration-200">
+<button class="tactic-toggle mt-0.5 w-6 h-6 rounded bg-surface-container-high text-transparent flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" data-checked="false">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<div class="flex flex-col min-w-0 flex-1">
+<p class="tactic-text font-body-md text-body-md text-on-surface select-none truncate">
+            Revisar funil de onboarding e mapear 3 pontos de abandono
+          </p>
+<div class="flex items-center gap-2 mt-1.5 flex-wrap">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Bloco Estratégico Matinal</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container-high text-primary">Meta 2: Retenção</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Pending Afternoon / Personal -->
+<div class="tactic-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-start gap-3 transition-all duration-200">
+<button class="tactic-toggle mt-0.5 w-6 h-6 rounded bg-surface-container-high text-transparent flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" data-checked="false">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+<div class="flex flex-col min-w-0 flex-1">
+<p class="tactic-text font-body-md text-body-md text-on-surface select-none truncate">
+            Treino de força na academia (Descompressão e Saúde)
+          </p>
+<div class="flex items-center gap-2 mt-1.5 flex-wrap">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Bloco Breakout 18:30</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed">Meta 3: Vitalidade</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Add Button -->
+<button class="w-full py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" id="addTacticBtn">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Nova Tática Rápida</span>
+</button>
+</section>
+<!-- Mini Scorecard & Weekly Cadence -->
+<section class="bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">timeline</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cadência da Semana 03</h3>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-800 bg-emerald-100 font-bold px-2 py-0.5 rounded-full">
+        Ritmo Alto
+      </span>
+</div>
+<!-- Horizontal Day Pills -->
+<div class="grid grid-cols-5 gap-1.5 text-center">
+<!-- Seg -->
+<div class="flex flex-col items-center py-2 px-1 rounded-xl bg-emerald-50 text-emerald-900">
+<span class="font-label-sm text-[10px] uppercase font-bold text-emerald-700">Seg</span>
+<span class="material-symbols-outlined text-[18px] my-0.5 text-emerald-600" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-[11px] font-bold">100%</span>
+</div>
+<!-- Ter -->
+<div class="flex flex-col items-center py-2 px-1 rounded-xl bg-emerald-50 text-emerald-900">
+<span class="font-label-sm text-[10px] uppercase font-bold text-emerald-700">Ter</span>
+<span class="material-symbols-outlined text-[18px] my-0.5 text-emerald-600" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-[11px] font-bold">100%</span>
+</div>
+<!-- Qua (Today) -->
+<div class="flex flex-col items-center py-2 px-1 rounded-xl bg-primary text-on-primary shadow-md scale-105">
+<span class="font-label-sm text-[10px] uppercase font-bold text-white/90">Qua</span>
+<span class="material-symbols-outlined text-[18px] my-0.5 text-white">pending</span>
+<span class="font-label-sm text-[11px] font-bold">50%</span>
+</div>
+<!-- Qui -->
+<div class="flex flex-col items-center py-2 px-1 rounded-xl bg-surface-container-low text-on-surface-variant">
+<span class="font-label-sm text-[10px] uppercase font-semibold">Qui</span>
+<span class="material-symbols-outlined text-[18px] my-0.5 text-outline">schedule</span>
+<span class="font-label-sm text-[11px]">Plan</span>
+</div>
+<!-- Sex -->
+<div class="flex flex-col items-center py-2 px-1 rounded-xl bg-surface-container-low text-on-surface-variant">
+<span class="font-label-sm text-[10px] uppercase font-semibold">Sex</span>
+<span class="material-symbols-outlined text-[18px] my-0.5 text-outline">analytics</span>
+<span class="font-label-sm text-[11px]">WAM 15m</span>
+</div>
+</div>
+<!-- Micro Encouragement Card -->
+<div class="bg-surface-container-low rounded-xl p-3 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-amber-500 flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">
+        Mantenha o Bloco Estratégico blindado até <strong>12:00</strong> para selar o <strong class="text-primary">Padrão Ouro (≥85%)</strong> no fechamento desta quarta-feira!
+      </p>
+</div>
+</section>
+<!-- Interactive Vision Modal (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="visionModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-sm w-full p-5 shadow-xl flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">flag</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Visão 3 Anos</h4>
+</div>
+<button class="p-1 rounded-full hover:bg-surface-container text-on-surface-variant" id="closeVisionModal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-3 font-body-md text-body-md text-on-surface">
+<div class="p-3 bg-surface-container rounded-xl">
+<span class="font-label-sm text-label-sm text-primary font-bold block mb-1">Impacto & Negócios</span>
+<p class="text-sm">Empresa com R$ 500k de faturamento anual recorrente, operando com equipe enxuta e alta retenção de clientes empresariais.</p>
+</div>
+<div class="p-3 bg-surface-container rounded-xl">
+<span class="font-label-sm text-label-sm text-tertiary font-bold block mb-1">Estilo de Vida & Saúde</span>
+<p class="text-sm">Liberdade geográfica plena, rotina inegociável de 4 treinos semanais e 8h de sono reparador todos os dias.</p>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow" id="confirmReadVision">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Concluir Leitura Matinal (2 min)</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function initFocusFlowCompanion() {
+    // 1. Timer Logic
+    let totalSeconds = 1 * 3600 + 42 * 60 + 18;
+    let isPaused = false;
+    const timerDisplay = document.getElementById('timerDisplay');
+    const pauseTimerBtn = document.getElementById('pauseTimerBtn');
+    const completeBlockBtn = document.getElementById('completeBlockBtn');
+
+    function updateTimer() {
+      if (!isPaused && totalSeconds > 0) {
+        totalSeconds--;
+        const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+        const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+        const seconds = String(totalSeconds % 60).padStart(2, '0');
+        if (timerDisplay) {
+          timerDisplay.textContent = hours + ':' + minutes + ':' + seconds;
+        }
+      }
+    }
+    const timerInterval = setInterval(updateTimer, 1000);
+
+    if (pauseTimerBtn) {
+      pauseTimerBtn.addEventListener('click', function() {
+        isPaused = !isPaused;
+        const icon = pauseTimerBtn.querySelector('.material-symbols-outlined');
+        const text = pauseTimerBtn.querySelector('span:last-child');
+        if (isPaused) {
+          icon.textContent = 'play_arrow';
+          text.textContent = 'Retomar';
+          pauseTimerBtn.classList.add('bg-amber-100', 'text-amber-900');
+        } else {
+          icon.textContent = 'pause';
+          text.textContent = 'Pausar';
+          pauseTimerBtn.classList.remove('bg-amber-100', 'text-amber-900');
+        }
+      });
+    }
+
+    if (completeBlockBtn) {
+      completeBlockBtn.addEventListener('click', function() {
+        totalSeconds = 0;
+        if (timerDisplay) timerDisplay.textContent = '00:00:00';
+        completeBlockBtn.disabled = true;
+        completeBlockBtn.classList.remove('bg-primary');
+        completeBlockBtn.classList.add('bg-emerald-600', 'cursor-not-allowed');
+        completeBlockBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span> Bloco Concluído!';
+      });
+    }
+
+    // 2. Interactive Tactic Checkboxes
+    const tacticsContainer = document.getElementById('tacticsContainer');
+    const tacticsCounter = document.getElementById('tacticsCompletedCount');
+
+    function refreshTacticsCounter() {
+      if (!tacticsContainer || !tacticsCounter) return;
+      const total = tacticsContainer.querySelectorAll('.tactic-card').length;
+      const checked = tacticsContainer.querySelectorAll('.tactic-toggle[data-checked="true"]').length;
+      tacticsCounter.textContent = checked;
+      const ratio = total > 0 ? Math.round((checked / total) * 100) : 0;
+      const counterContainer = tacticsCounter.closest('span');
+      if (counterContainer) {
+        counterContainer.innerHTML = '<strong class="text-on-surface">' + checked + '</strong> de ' + total + ' (' + ratio + '%)';
+      }
+    }
+
+    if (tacticsContainer) {
+      tacticsContainer.addEventListener('click', function(e) {
+        const toggleBtn = e.target.closest('.tactic-toggle');
+        if (!toggleBtn) return;
+
+        const card = toggleBtn.closest('.tactic-card');
+        const text = card.querySelector('.tactic-text');
+        const isChecked = toggleBtn.getAttribute('data-checked') === 'true';
+
+        if (isChecked) {
+          toggleBtn.setAttribute('data-checked', 'false');
+          toggleBtn.classList.remove('bg-primary', 'text-on-primary');
+          toggleBtn.classList.add('bg-surface-container-high', 'text-transparent');
+          if (text) {
+            text.classList.remove('line-through', 'text-on-surface-variant');
+            text.classList.add('text-on-surface');
+          }
+        } else {
+          toggleBtn.setAttribute('data-checked', 'true');
+          toggleBtn.classList.remove('bg-surface-container-high', 'text-transparent');
+          toggleBtn.classList.add('bg-primary', 'text-on-primary');
+          if (text) {
+            text.classList.add('line-through', 'text-on-surface-variant');
+            text.classList.remove('text-on-surface');
+          }
+        }
+        refreshTacticsCounter();
+      });
+    }
+
+    // 3. Quick Add Tactic micro-interaction
+    const addTacticBtn = document.getElementById('addTacticBtn');
+    if (addTacticBtn && tacticsContainer) {
+      addTacticBtn.addEventListener('click', function() {
+        const item = document.createElement('div');
+        item.className = 'tactic-card bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-start gap-3 transition-all duration-200';
+        item.innerHTML = `
+          <button class="tactic-toggle mt-0.5 w-6 h-6 rounded bg-surface-container-high text-transparent flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" data-checked="false">
+            <span class="material-symbols-outlined text-[18px]">check</span>
+          </button>
+          <div class="flex flex-col min-w-0 flex-1">
+            <p class="tactic-text font-body-md text-body-md text-on-surface select-none truncate">
+              Nova Tática Estratégica (Semana 03)
+            </p>
+            <div class="flex items-center gap-2 mt-1.5 flex-wrap">
+              <span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Bloco Flexível</span>
+              <span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container-high text-primary">Alta Prioridade</span>
+            </div>
+          </div>
+        `;
+        tacticsContainer.appendChild(item);
+        refreshTacticsCounter();
+      });
+    }
+
+    // 4. Modal de Visão
+    const visionModal = document.getElementById('visionModal');
+    const openPocketCard = document.getElementById('openPocketCard');
+    const closeVisionModal = document.getElementById('closeVisionModal');
+    const confirmReadVision = document.getElementById('confirmReadVision');
+    const toggleVisionModal = document.getElementById('toggleVisionModal');
+
+    function openModal() {
+      if (visionModal) {
+        visionModal.classList.remove('hidden');
+        visionModal.classList.add('flex');
+      }
+    }
+
+    function closeModal() {
+      if (visionModal) {
+        visionModal.classList.add('hidden');
+        visionModal.classList.remove('flex');
+      }
+    }
+
+    if (openPocketCard) openPocketCard.addEventListener('click', openModal);
+    if (closeVisionModal) closeVisionModal.addEventListener('click', closeModal);
+    if (confirmReadVision) {
+      confirmReadVision.addEventListener('click', function() {
+        closeModal();
+        if (toggleVisionModal) {
+          toggleVisionModal.innerHTML = '<span>Lido Hoje ✓</span>';
+          toggleVisionModal.classList.remove('bg-white/20');
+          toggleVisionModal.classList.add('bg-emerald-500/80', 'text-white');
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(11,28,48,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="group flex flex-col items-center justify-center min-w-[64px] h-12 rounded-xl transition-all duration-200 text-primary font-bold" data-path="hoje" href="#"><div class="flex items-center justify-center w-10 h-7 rounded-full group-hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">task_alt</span></div><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Hoje</span></a><a class="group flex flex-col items-center justify-center min-w-[64px] h-12 rounded-xl transition-all duration-200 text-on-surface-variant hover:text-on-surface" data-path="visao" href="#"><div class="flex items-center justify-center w-10 h-7 rounded-full group-hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">auto_awesome</span></div><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Visão</span></a><a class="group flex flex-col items-center justify-center min-w-[64px] h-12 rounded-xl transition-all duration-200 text-on-surface-variant hover:text-on-surface" data-path="blocos" href="#"><div class="flex items-center justify-center w-10 h-7 rounded-full group-hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">timer</span></div><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Blocos</span></a><a class="group flex flex-col items-center justify-center min-w-[64px] h-12 rounded-xl transition-all duration-200 text-on-surface-variant hover:text-on-surface" data-path="placar" href="#"><div class="flex items-center justify-center w-10 h-7 rounded-full group-hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">analytics</span></div><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Placar</span></a></div></nav></body></html>

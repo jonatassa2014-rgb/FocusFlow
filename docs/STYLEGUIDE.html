@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#5516be","tertiary-fixed-dim":"#d0bcff","error":"#ba1a1a","surface-container-high":"#dce9ff","on-tertiary-container":"#f6edff","primary-fixed":"#dbe1ff","secondary":"#3755c3","surface-container-low":"#eff4ff","inverse-surface":"#213145","on-tertiary-fixed":"#23005c","primary-container":"#2563eb","inverse-primary":"#b4c5ff","on-surface-variant":"#434655","inverse-on-surface":"#eaf1ff","on-primary-fixed":"#00174b","on-background":"#0b1c30","surface":"#f8f9ff","surface-container-highest":"#d3e4fe","surface-container":"#e5eeff","tertiary-container":"#7d4ce7","surface-tint":"#0053db","background":"#f8f9ff","outline":"#737686","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","on-primary":"#ffffff","on-secondary-container":"#00217a","surface-variant":"#d3e4fe","surface-bright":"#f8f9ff","surface-dim":"#cbdbf5","primary":"#004ac6","on-secondary-fixed-variant":"#173bab","on-error":"#ffffff","outline-variant":"#c3c6d7","on-error-container":"#93000a","on-primary-fixed-variant":"#003ea8","primary-fixed-dim":"#b4c5ff","secondary-fixed-dim":"#b8c4ff","secondary-container":"#708cfd","on-surface":"#0b1c30","on-primary-container":"#eeefff","tertiary-fixed":"#e9ddff","secondary-fixed":"#dde1ff","error-container":"#ffdad6","on-secondary-fixed":"#001453","tertiary":"#632ecd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2rem","margin-mobile":"1rem","margin":"2rem","gutter":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem","gutter-mobile":"1rem"},"fontFamily":{"label-sm":["Inter"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"body-sm":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"metric-stat":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-xl":["Plus Jakarta Sans"]},"fontSize":{"label-sm":["11px",{"lineHeight":"14px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-hero-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}],"metric-stat":["32px",{"lineHeight":"38px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[240px]"><img alt="Brand logo. - Primary color: #2563eb
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X8aH50asd3O6cIzMIcVHjGRjBKuIW3fuKjl4tyDqjHtbKJmoOIrTzrfRHRc7cXm2LkMioFuwvWB4zj0lTXl_psH7WYctOqI6iLoVwrcyQbJP_dnIVUziqdLBygoGLjoIibzH9QAjGGq8Wmi1kUNKwgLDfc-Pd_DWaCRs7je9VyN31FMd8OzquHHLBWcVSqPAWqX4SLMpdxwss9Fh-sfMe7W2uyIAh2MFXV2xUzvR5hhpmn5nmBPPFFD-M"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">FocusFlow</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Execution OS</span></div></div><div class="hidden md:flex items-center flex-1 max-w-xl mx-auto px-space-md"><div class="w-full flex items-center gap-space-sm bg-surface-container-low px-space-md py-1.5 rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="w-full bg-transparent border-0 text-on-surface placeholder:text-outline focus:outline-none font-body-sm text-body-sm" placeholder="Buscar componentes, metas, blocos táticos (Cmd + K)..." type="text"/><span class="font-label-sm text-label-sm text-outline-variant bg-surface px-1.5 py-0.5 rounded shadow-[0_1px_2px_rgba(0,0,0,0.05)]">⌘K</span></div></div><div class="flex items-center gap-space-md justify-end min-w-[200px]"><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">tune</span></button><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:block"><span class="font-label-md text-label-md text-on-surface leading-tight">Gabriel Santos</span><span class="font-label-sm text-label-sm text-on-surface-variant">Lead Architect</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]" src="https://lh3.googleusercontent.com/aida/AEtjO1VBk6rFLGmhOrM3lIrOUP362SDZu90-NPV-ksDzb8Aj0i2yCZPe9UmfQOfxLV4ZCPHf1mTdhnLv7v_6gvL-eB7542AxmudqZOaLOX2V0oBp6Q1StXo0zYIB9VNa_DZmptFbhQaFFg6xW6pfdArkg5HVoihIHSLICRPibPAYcSPhil3VO-oWhoebEttPHTVwr0A10XPDXmt1QM8YPrwlUP26zzZAVbmoDN9qFByCJ8HlZEJOE50UzblxJkw"/></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-low z-30 flex flex-col justify-between py-space-md overflow-y-auto"><div class="px-space-md flex flex-col gap-space-md"><div class="px-space-sm pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Rotina Tática</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="progresso-diario" href="#"><span class="material-symbols-outlined text-[20px]">trending_up</span><span>Progresso diário</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="placar-e-wam" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Placar &amp; WAM</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="mapa-do-ciclo" href="#"><span class="material-symbols-outlined text-[20px]">view_timeline</span><span>Mapa do Ciclo</span></a></nav><div class="pt-space-sm"><div class="px-space-sm pb-space-xs flex items-center justify-between"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Design System</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">v2.4</span></div><nav class="flex flex-col gap-1 bg-surface-container-lowest p-1.5 rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.05)]"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="tokens-e-cores" href="#"><span class="material-symbols-outlined text-[18px]">palette</span><span>Tokens &amp; Cores</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="tipografia" href="#"><span class="material-symbols-outlined text-[18px]">title</span><span>Tipografia</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="componentes-ui" href="#"><span class="material-symbols-outlined text-[18px]">widgets</span><span>Componentes UI</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="padroes-metodologicos" href="#"><span class="material-symbols-outlined text-[18px]">checklist</span><span>Padrões Metodológicos</span></a></nav></div></div><div class="px-space-md pt-space-md"><div class="p-space-md rounded-xl bg-surface-container-high/60 flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Ciclo Atual</span><span class="font-label-sm text-label-sm text-primary font-bold">Semana 08 / 12</span></div><div class="w-full bg-surface h-1.5 rounded-full overflow-hidden"><div class="bg-primary-container h-full w-[66%]"></div></div><span class="font-label-sm text-label-sm text-on-surface-variant text-right">WAM Meta: ≥85%</span></div></div></aside><div class="pl-72"><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow (Zero borders, smooth execution atmosphere) -->
+<div class="relative w-full px-space-xl py-space-xl overflow-hidden bg-gradient-to-b from-surface-container-low/80 via-surface to-surface">
+<div class="absolute -top-32 right-12 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 left-1/3 w-64 h-64 bg-tertiary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- 1. Executive Design System Header -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-sm max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-label-sm font-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Produção / Hand-off Ready
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-wide">
+              SPEC v2.4 • The 12 Week Year
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+              Velocity Engine
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+            FocusFlow Design System &amp; Styleguide
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Arquitetura visual tática fundamentada na metodologia The 12 Week Year: Clareza Cognitiva, Ritmo Semanal Blindado, Tipografia Escaneável e Acessibilidade WCAG AAA.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs text-on-surface-variant">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+              Escala 8px Strict
+            </span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">contrast</span>
+              WCAG AAA Contrast Validated
+            </span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">timer</span>
+              Sub-second Cognitive Load
+            </span>
+</div>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:shadow transition-all flex items-center gap-2" id="copy-tokens-btn">
+<span class="material-symbols-outlined text-[18px] text-primary">code</span>
+<span>Copiar Tokens CSS</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:shadow transition-all flex items-center gap-2" id="export-figma-btn">
+<span class="material-symbols-outlined text-[18px] text-secondary">token</span>
+<span>Exportar Figma Variables</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-md hover:bg-primary transition-all flex items-center gap-2" id="json-spec-btn">
+<span class="material-symbols-outlined text-[18px]">data_object</span>
+<span>Especificação JSON</span>
+</button>
+</div>
+</section>
+<!-- Toast Feedback (Hidden by default, activated via script) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-12 opacity-0 transition-all duration-300 pointer-events-none px-space-md py-2.5 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl flex items-center gap-2 font-label-md text-label-md" id="feedback-toast">
+<span class="material-symbols-outlined text-emerald-400 text-[18px]">check_circle</span>
+<span id="feedback-text">Tokens copiados para a área de transferência!</span>
+</div>
+<!-- Quick Index Anchor Bar -->
+<div class="p-space-xs rounded-xl bg-surface-container-lowest shadow-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1 overflow-x-auto py-1">
+<a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" href="#cores">01. Cores Metodológicas</a>
+<a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" href="#tipografia">02. Tipografia &amp; Escala</a>
+<a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" href="#componentes">03. Componentes UI</a>
+<a class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" href="#regras">04. Diretrizes de UX &amp; Negócio</a>
+</div>
+<div class="px-3 py-1 rounded-md bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+<span>Zero borders system</span>
+</div>
+</div>
+<!-- 2. SECTION 1: PALETA DE CORES SEMÂNTICAS & METODOLÓGICAS -->
+<section class="flex flex-col gap-space-lg pt-space-md" id="cores">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Seção 01</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fundamentos Cromáticos</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Paleta de Cores Semânticas &amp; Metodológicas
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Tokens funcionais organizados por hierarquia cognitiva e categorização estrita dos blocos de alta produtividade (The 12 Week Year).
+          </p>
+</div>
+<!-- Group A: Primárias & Superfícies de Alta Densidade -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cores Primárias e Superfície do Cockpit</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tokens Base de Interface</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Swatch 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-48">
+<div class="h-20 w-full rounded-lg bg-primary-container flex items-end p-2.5 shadow-inner">
+<span class="text-on-primary-container font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-black/20">Ação Principal</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Primary Royal Blue</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#2563EB • bg-primary-container</span>
+<div class="flex items-center justify-between mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span>Ratio 7.8:1 (AAA)</span>
+<span class="text-primary font-bold">Token: --primary</span>
+</div>
+</div>
+</div>
+<!-- Swatch 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-48">
+<div class="h-20 w-full rounded-lg bg-primary flex items-end p-2.5 shadow-inner">
+<span class="text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-black/20">Deep Focus</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Primary Dark</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#1D4ED8 • bg-primary</span>
+<div class="flex items-center justify-between mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span>Ratio 9.1:1 (AAA)</span>
+<span class="text-primary font-bold">Token: --primary-dark</span>
+</div>
+</div>
+</div>
+<!-- Swatch 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-48">
+<div class="h-20 w-full rounded-lg bg-surface-container-low flex items-end p-2.5">
+<span class="text-on-surface font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-white/70">Canvas Frio</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Surface Container Low</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#EFF4FF • bg-surface-container-low</span>
+<div class="flex items-center justify-between mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span>Nível 0 Fundo</span>
+<span class="text-on-surface-variant font-bold">Token: --surface-low</span>
+</div>
+</div>
+</div>
+<!-- Swatch 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between h-48">
+<div class="h-20 w-full rounded-lg bg-inverse-surface flex items-end p-2.5">
+<span class="text-inverse-on-surface font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-white/10">Ultra Contraste</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Text Pure Contrast</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#0B1C30 • text-on-surface</span>
+<div class="flex items-center justify-between mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span>Ratio 15.2:1 (AAA)</span>
+<span class="text-on-surface font-bold">Token: --text-pure</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Group B: Cores de Blocos de Tempo (The 12 Week Year) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cores de Blocos de Tempo (The 12 Week Year)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cores intencionais para eliminação de atrito cognitivo no cronograma semanal.</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high font-label-sm text-label-sm text-primary font-bold">Metodologia 12WY</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Bloco 1: Estratégico -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="h-14 w-full rounded-xl bg-primary-container p-3 flex items-center justify-between text-on-primary shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+<span class="font-label-lg text-label-lg font-bold">Bloco Estratégico</span>
+</div>
+<span class="font-label-sm text-label-sm bg-white/20 px-2 py-0.5 rounded-full">3 horas / sem</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Deep Work Indivisível</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Royal Blue / Indigo • #2563EB e #1E40AF</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Tempo não-interrompível de alta energia concentrado nas táticas estratégicas que movem os lead indicators.
+                </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[16px]">security</span>
+                  Foco Cirúrgico e Blindagem DND
+                </span>
+<span class="font-label-sm text-label-sm text-outline">Classe: bg-primary-container / text-on-primary</span>
+</div>
+</div>
+<!-- Bloco 2: Buffer -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="h-14 w-full rounded-xl bg-surface-container-highest p-3 flex items-center justify-between text-on-surface shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">inbox</span>
+<span class="font-label-lg text-label-lg font-bold">Bloco Buffer</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full">1-2h diárias</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Operacional &amp; Triagem</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Slate / Steel Blue • #64748B e #334155</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Agrupamento de microtarefas, respostas de e-mail, alinhamentos e ruídos operacionais que tentam invadir o deep work.
+                </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+                  Triagens Rápidas &amp; Transições
+                </span>
+<span class="font-label-sm text-label-sm text-outline">Classe: bg-surface-container-high / text-on-surface</span>
+</div>
+</div>
+<!-- Bloco 3: Breakout -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="h-14 w-full rounded-xl bg-emerald-600 p-3 flex items-center justify-between text-white shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">spa</span>
+<span class="font-label-lg text-label-lg font-bold">Bloco Breakout</span>
+</div>
+<span class="font-label-sm text-label-sm bg-white/20 px-2 py-0.5 rounded-full">3 horas / sem</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Descompressão &amp; Saúde</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Emerald / Teal • #059669 e #047857</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Recarga deliberada sem telas no horário comercial para oxigenação mental, renovação de clareza e prevenção de burnout.
+                </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-bold w-fit">
+<span class="material-symbols-outlined text-[16px]">offline_bolt</span>
+                  Recarga Cognitiva Sem Telas
+                </span>
+<span class="font-label-sm text-label-sm text-outline">Classe: bg-emerald-600 / text-white</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Group C: Cores de Aderência WAM (Weekly Accountability Meeting) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cores de Aderência WAM (Weekly Accountability Meeting)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Métricas de prestação de contas semanal. 85% de execução é o limiar de vitória garantida.</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Limiar Crítico: &gt;= 85%</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Padrão Ouro -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-emerald-500 text-white flex flex-col items-center justify-center font-headline-sm text-headline-sm shadow-sm">
+<span>≥85%</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Padrão Ouro</span>
+</div>
+<span class="font-label-md text-label-md text-emerald-700">Emerald Green (#10B981)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Execução no topo. Metas do ano de 12 semanas garantidas.</span>
+</div>
+</div>
+<!-- Zona de Alerta -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-amber-500 text-white flex flex-col items-center justify-center font-headline-sm text-headline-sm shadow-sm">
+<span>70-84</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Zona de Alerta</span>
+</div>
+<span class="font-label-md text-label-md text-amber-700">Amber Glow (#F59E0B)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Aderência instável. Requer corte de reuniões na próxima semana.</span>
+</div>
+</div>
+<!-- Risco Metodológico -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl bg-error text-on-error flex flex-col items-center justify-center font-headline-sm text-headline-sm shadow-sm">
+<span>&lt;70%</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Risco Metodológico</span>
+</div>
+<span class="font-label-md text-label-md text-error">Crimson Alert (#EF4444)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Plano semanal irrealista ou falta grave de blindagem de tempo.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SECTION 2: SISTEMA TIPOGRÁFICO (PLUS JAKARTA SANS) -->
+<section class="flex flex-col gap-space-lg pt-space-md" id="tipografia">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Seção 02</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estrutura de Leitura</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Sistema Tipográfico (Plus Jakarta Sans &amp; Inter)
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Construído para escanabilidade instantânea em cockpits de produtividade com alternância entre figuras tabulares e pesos expressivos.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-lg">
+<!-- Row 1: Display 01 -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg bg-surface-container-low/40 p-space-md rounded-xl">
+<div class="flex flex-col gap-1 max-w-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">Display 01</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">32px / 38px • Bold 700 / 800</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Métricas Principais &amp; WAM</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Indicadores de impacto em placares semanais e cartões de vitória de trimestre.</p>
+</div>
+<div class="flex-1 lg:max-w-xl flex flex-col gap-1">
+<div class="font-metric-stat text-metric-stat text-on-surface font-extrabold tracking-tight">
+                91.4% de Eficácia Tática
+              </div>
+<span class="font-label-sm text-label-sm text-outline font-mono">Token: .font-metric-stat .text-metric-stat (Plus Jakarta Sans)</span>
+</div>
+</div>
+<!-- Row 2: Heading 02 -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg bg-surface-container-low/40 p-space-md rounded-xl">
+<div class="flex flex-col gap-1 max-w-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">Heading 02</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24px / 30px • Bold 700</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Nomes de Seções e Modais</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Divisores estruturais de ciclo e títulos de planejamento de sprint.</p>
+</div>
+<div class="flex-1 lg:max-w-xl flex flex-col gap-1">
+<div class="font-headline-md text-headline-md text-on-surface">
+                Semana 08: Sprint de Tração do Pipeline Corporativo
+              </div>
+<span class="font-label-sm text-label-sm text-outline font-mono">Token: .font-headline-md .text-headline-md</span>
+</div>
+</div>
+<!-- Row 3: Subheading -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg bg-surface-container-low/40 p-space-md rounded-xl">
+<div class="flex flex-col gap-1 max-w-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">Subheading</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18px / 26px • SemiBold 600</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Títulos de Táticas e Blocos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Linhas de ação operacional e identificadores de lead activities.</p>
+</div>
+<div class="flex-1 lg:max-w-xl flex flex-col gap-1">
+<div class="font-headline-sm text-headline-sm text-on-surface">
+                Tática 2.4: Realizar 15 touchpoints estratégicos outbound
+              </div>
+<span class="font-label-sm text-label-sm text-outline font-mono">Token: .font-headline-sm .text-headline-sm</span>
+</div>
+</div>
+<!-- Row 4: Body Medium -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-lg bg-surface-container-low/40 p-space-md rounded-xl">
+<div class="flex flex-col gap-1 max-w-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">Body Medium</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14px / 20px • Regular / Medium</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Textos Descritivos &amp; Táticas</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Corpo de texto padrão para notas de execução e instruções de entrega.</p>
+</div>
+<div class="flex-1 lg:max-w-xl flex flex-col gap-1">
+<div class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Cada semana deve ser tratada como um ano isolado. Não procrastine entregas contando com o final do trimestre civil; a urgência é imediata e calculada por cada dia de compromisso assumido.
+              </div>
+<span class="font-label-sm text-label-sm text-outline font-mono">Token: .font-body-md .text-body-md (Inter)</span>
+</div>
+</div>
+<!-- Row 5: Caption / Mono -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-low/40 p-space-md rounded-xl">
+<div class="flex flex-col gap-1 max-w-sm">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">Caption / Mono</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">12px / 16px • SemiBold 600</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Timers, Horários &amp; Badges</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Formatos de cronômetro, tags de tempo e coordenadas de ciclo de alta precisão.</p>
+</div>
+<div class="flex-1 lg:max-w-xl flex items-center gap-space-md flex-wrap">
+<div class="px-3 py-1.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-mono font-bold text-headline-sm">
+                01:42:14
+              </div>
+<div class="px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">
+                09:00 - 12:00 BRT
+              </div>
+<div class="px-2 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                SLOT_ID: #STRAT-W08-B1
+              </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SECTION 3: BIBLIOTECA DE COMPONENTES UI & ESTADOS INTERATIVOS -->
+<section class="flex flex-col gap-space-lg pt-space-md" id="componentes">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Seção 03</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sistemas de Interação</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Biblioteca de Componentes UI &amp; Estados Interativos
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Elementos táteis calibrados com resposta de microinteração para manter o operador em estado de fluxo e foco sustentado.
+          </p>
+</div>
+<!-- 3.1 Botões e Estados -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Botões: Padrões &amp; Matriz de Estados</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero-border shadow-driven</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md pt-space-xs">
+<!-- Coluna Default -->
+<div class="flex flex-col gap-space-sm p-space-sm rounded-xl bg-surface-container-low/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-center">Default</span>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm hover:shadow transition-all flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Iniciar Bloco</span>
+</button>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all flex items-center justify-center gap-1.5">
+<span>Plano Tático</span>
+</button>
+<button class="w-full px-space-md py-2 rounded-lg bg-transparent text-primary hover:bg-primary-fixed/40 font-label-md text-label-md transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Nova Tática</span>
+</button>
+</div>
+<!-- Coluna Hover -->
+<div class="flex flex-col gap-space-sm p-space-sm rounded-xl bg-surface-container-low/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-center">Hover</span>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-md transition-all flex items-center justify-center gap-1.5 transform -translate-y-0.5">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Iniciar Bloco</span>
+</button>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg shadow transition-all flex items-center justify-center gap-1.5">
+<span>Plano Tático</span>
+</button>
+<button class="w-full px-space-md py-2 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-md text-label-md transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Nova Tática</span>
+</button>
+</div>
+<!-- Coluna Focused / Active -->
+<div class="flex flex-col gap-space-sm p-space-sm rounded-xl bg-surface-container-low/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-center">Active / Pressed</span>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-inner scale-[0.98] transition-all flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span>Iniciar Bloco</span>
+</button>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-highest text-on-surface font-label-lg text-label-lg shadow-inner scale-[0.98] transition-all flex items-center justify-center gap-1.5">
+<span>Plano Tático</span>
+</button>
+<button class="w-full px-space-md py-2 rounded-lg bg-primary-fixed text-primary font-label-md text-label-md scale-[0.98] transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Nova Tática</span>
+</button>
+</div>
+<!-- Coluna Disabled -->
+<div class="flex flex-col gap-space-sm p-space-sm rounded-xl bg-surface-container-low/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-center">Disabled</span>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-high text-outline cursor-not-allowed font-label-lg text-label-lg flex items-center justify-center gap-1.5 opacity-60" disabled="">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Iniciar Bloco</span>
+</button>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-surface-container text-outline cursor-not-allowed font-label-lg text-label-lg flex items-center justify-center gap-1.5 opacity-60" disabled="">
+<span>Plano Tático</span>
+</button>
+<button class="w-full px-space-md py-2 rounded-lg bg-transparent text-outline cursor-not-allowed font-label-md text-label-md flex items-center justify-center gap-1 opacity-60" disabled="">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Nova Tática</span>
+</button>
+</div>
+<!-- Coluna Loading -->
+<div class="flex flex-col gap-space-sm p-space-sm rounded-xl bg-surface-container-low/50">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-center">Loading</span>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-2 cursor-wait">
+<span class="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+<span>Processando</span>
+</button>
+<button class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-2 cursor-wait">
+<span class="w-4 h-4 border-2 border-primary/30 border-t-primary rounded-full animate-spin"></span>
+<span>Carregando</span>
+</button>
+<div class="h-9 flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-primary animate-pulse">Sincronizando WAM...</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3.2 Componentes de Tática (Checklist Metodológico) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Componentes de Tática (Weekly Execution Item)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comportamento interativo real. Clique nas caixas de seleção para testar a atualização do cálculo de aderência.</p>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full font-bold">+25% por item</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Tática 1: Default Interativa -->
+<div class="tactic-row p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<label class="relative flex items-center justify-center cursor-pointer mt-0.5">
+<input class="tactic-checkbox peer sr-only" data-points="25" type="checkbox"/>
+<span class="w-5 h-5 rounded bg-surface-container-high peer-checked:bg-primary-container transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[16px] opacity-0 peer-checked:opacity-100">check</span>
+</span>
+</label>
+<div class="flex flex-col gap-1">
+<span class="tactic-title font-label-lg text-label-lg text-on-surface transition-all">
+                    Realizar 10 contatos de prospecção para contas Enterprise Tier-1
+                  </span>
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary font-bold">Meta 1: Tração B2B</span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+                      Lead Indicator
+                    </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm">Estimado: 2h30m</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<span class="px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                  Bloco Estratégico
+                </span>
+<span class="score-pill font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-on-surface-variant">
+                  Pendente
+                </span>
+</div>
+</div>
+<!-- Tática 2: Concluída Exemplar -->
+<div class="tactic-row p-space-md rounded-xl bg-surface-container-low/70 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<label class="relative flex items-center justify-center cursor-pointer mt-0.5">
+<input checked="" class="tactic-checkbox peer sr-only" data-points="25" type="checkbox"/>
+<span class="w-5 h-5 rounded bg-primary-container peer-checked:bg-primary-container transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[16px]">check</span>
+</span>
+</label>
+<div class="flex flex-col gap-1">
+<span class="tactic-title font-label-lg text-label-lg text-on-surface-variant line-through">
+                    Publicar estudo de caso de retenção de clientes no LinkedIn e newsletter
+                  </span>
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-secondary font-bold">Meta 2: Retenção SaaS</span>
+<span class="text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-emerald-600">verified</span>
+                      Execução Validada
+                    </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-bold">+25% WAM</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                  Concluído
+                </span>
+</div>
+</div>
+<!-- Tática 3: Prioridade Crítica / Em Foco -->
+<div class="tactic-row p-space-md rounded-xl bg-surface-container-lowest shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-gradient-to-r from-primary-container/10 via-surface-container-lowest to-surface-container-lowest">
+<div class="flex items-start gap-space-md">
+<label class="relative flex items-center justify-center cursor-pointer mt-0.5">
+<input class="tactic-checkbox peer sr-only" data-points="25" type="checkbox"/>
+<span class="w-5 h-5 rounded bg-surface-container-high peer-checked:bg-primary-container transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[16px] opacity-0 peer-checked:opacity-100">check</span>
+</span>
+</label>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold animate-pulse">
+                      Prioridade Crítica
+                    </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Hoje • Bloco 2</span>
+</div>
+<span class="tactic-title font-label-lg text-label-lg text-on-surface font-bold">
+                    Revisar arquitetura do motor de agendamento com o time técnico
+                  </span>
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Meta 3: Escalabilidade</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm">DND Blindado Obrigatório</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-center">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold shadow hover:bg-primary transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">play_circle</span>
+<span>Focar Agora</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 3.3 Chips & Badges de Metodologia -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Chips &amp; Badges Semânticos da Metodologia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Elementos de taxonomia para táticas, objetivos do ciclo e ritmos de reunião.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Coluna 1: Lead vs Lag -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Natureza do Indicador</span>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                  Lead Indicator (Ação)
+                </span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+                  Lag Indicator (Resultado)
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Lead mede o esforço que você controla; Lag mede a consequência tardia.</p>
+</div>
+<!-- Coluna 2: Badges de Metas -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Metas do Ciclo de 12 Semanas</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-md bg-blue-50 text-blue-800 font-label-sm text-label-sm font-semibold">
+                  Meta 1: Tração B2B
+                </span>
+<span class="px-2.5 py-1 rounded-md bg-purple-50 text-purple-800 font-label-sm text-label-sm font-semibold">
+                  Meta 2: Retenção SaaS
+                </span>
+<span class="px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-semibold">
+                  Meta 3: Vitalidade
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Máximo de 3 metas principais por ciclo para evitar dispersão de foco.</p>
+</div>
+<!-- Coluna 3: Badges de Cadência & Estado -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Status de Cadência WAM</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                  Padrão Ouro 88.5%
+                </span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+                  Ritmo Alto
+                </span>
+<span class="px-2.5 py-1 rounded-md bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-amber-400">notifications_off</span>
+                  DND Ativado
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Sinais táteis visíveis em todo o cockpit em tempo real.</p>
+</div>
+</div>
+</div>
+<!-- 3.4 Cards de Estrutura & Cronômetros -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Widget de Cronômetro de Bloco Estratégico (7 cols) -->
+<div class="lg:col-span-7 p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="p-2 rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cronômetro de Bloco Estratégico</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sessão Contínua de 3 Horas • Blindagem Ativa</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Em Progresso
+              </span>
+</div>
+<div class="py-space-md flex flex-col items-center justify-center gap-space-sm bg-surface-container-low/60 rounded-xl p-space-lg">
+<div class="font-metric-stat text-[44px] leading-tight text-on-surface font-mono tracking-wider font-extrabold" id="interactive-timer">
+                01:42:14
+              </div>
+<div class="w-full max-w-md bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[56%] transition-all duration-500" id="timer-progress"></div>
+</div>
+<div class="flex items-center justify-between w-full max-w-md font-label-sm text-label-sm text-on-surface-variant px-1">
+<span>Início: 09:00</span>
+<span>56% concluído</span>
+<span>Fim: 12:00</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<div class="flex items-center gap-2">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1.5" id="timer-toggle-btn">
+<span class="material-symbols-outlined text-[18px]">pause</span>
+<span id="timer-toggle-label">Pausar Sessão</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset</span>
+</button>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-emerald-600 text-white font-label-md text-label-md shadow hover:bg-emerald-700 transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Concluir Bloco (+100% Score)</span>
+</button>
+</div>
+</div>
+<!-- Card do Cartão de Bolso da Visão (5 cols) -->
+<div class="lg:col-span-5 p-space-lg rounded-2xl bg-gradient-to-br from-primary-container to-secondary text-white shadow-md flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-40 h-40 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-white/20 text-white font-label-sm text-label-sm font-bold uppercase tracking-wider">
+                  Cartão de Bolso da Visão
+                </span>
+<span class="material-symbols-outlined text-white/80 text-[20px]">visibility</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-white font-bold">
+                Visão de Longo Prazo (3 Anos)
+              </h4>
+<p class="font-body-md text-body-md text-white/90 italic leading-relaxed">
+                "Consolidar a liderança de mercado como a plataforma de execução tática preferida das 500 startups mais aceleradas da América Latina, mantendo 85%+ de aderência metodológica contínua."
+              </p>
+</div>
+<div class="pt-space-sm relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-white/80 font-label-sm text-label-sm">
+<span>Ritual Matinal Diário</span>
+<span>Obrigatório: 2 Minutos</span>
+</div>
+<div class="p-2.5 rounded-lg bg-black/20 backdrop-blur-md flex items-center gap-2 text-white font-label-md text-label-md">
+<span class="material-symbols-outlined text-amber-300 text-[18px]">lock_clock</span>
+<span>Ler esta visão antes de abrir qualquer e-mail ou Slack.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. SECTION 4: DIRETRIZES DE UX & REGRAS DE NEGÓCIO -->
+<section class="flex flex-col gap-space-lg pt-space-md mb-space-xl" id="regras">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Seção 04</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lógica do Motor Tático</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+            Diretrizes de UX &amp; Regras de Negócio Inegociáveis
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Padrões comportamentais do software que protegem a metodologia contra armadilhas clássicas de produtividade ilusória.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Regra 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed font-bold font-label-lg text-label-lg flex items-center justify-center">
+                  01
+                </span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+                  Zero Reuniões
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+                Blindagem de Blocos Estratégicos
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Nenhum convite de calendário ou reunião externa pode sobrepor um Bloco Estratégico agendado. O sistema bloqueia notificações e ativa automaticamente o status DND (Do Not Disturb) em todas as integrações configuradas.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">shield</span>
+<span>Regra de sistema: Rejeição automática de slots com conflito.</span>
+</div>
+</div>
+<!-- Regra 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed text-on-primary-fixed font-bold font-label-lg text-label-lg flex items-center justify-center">
+                  02
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-bold">
+                  Ação sob Controle
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+                Lead vs Lag (Ações Sob Controle Direto)
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Táticas cadastradas são estritamente ações sob controle voluntário do executor (ex: "Fazer 15 ligações"), e nunca resultados contingentes (ex: "Fechar 2 contratos"). Resultados são lags; o sistema pontua exclusivamente a disciplina do lead.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px]">psychology_alt</span>
+<span>Regra de validação: Verbos ativos imperativos obrigatórios.</span>
+</div>
+</div>
+<!-- Regra 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-900 font-bold font-label-lg text-label-lg flex items-center justify-center">
+                  03
+                </span>
+<span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 font-label-sm text-label-sm font-bold">
+                  Score Real
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+                Cálculo de Aderência WAM
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                A nota semanal é puramente matemática: <code class="font-mono text-primary font-bold">WAM = (Táticas Executadas / Táticas Planejadas) × 100</code>. Não há crédito parcial para tarefas quase prontas. A pontuação ≥ 85% garante a materialização das metas de 12 semanas.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">calculate</span>
+<span>Regra de pontuação: Resposta binária estrita (0 ou 100%).</span>
+</div>
+</div>
+<!-- Regra 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-bold font-label-lg text-label-lg flex items-center justify-center">
+                  04
+                </span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-bold">
+                  Ritual Matinal
+                </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">
+                Ritual de 2 Minutos com a Visão
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Leitura obrigatória e inegociável do Cartão de Bolso da Visão antes de verificar qualquer caixa de entrada de e-mails, Slack ou WhatsApp corporativo. O software apresenta uma tela de foco matinal antes de liberar os painéis de chat.
+              </p>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[18px]">alarm_on</span>
+<span>Regra de fluxo: Hard gate de desbloqueio diário matinal.</span>
+</div>
+</div>
+</div>
+<!-- System Architecture Footnote -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+<span class="font-label-md text-label-md">Engine do FocusFlow Velocity v2.4 • Base CSS Tailored • Tokens sincronizados</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span>Último deploy: Hoje, 10:42 UTC</span>
+<span class="text-outline-variant">•</span>
+<span class="text-emerald-700 font-bold">Status: Online (100% Operational)</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for Micro-interactions -->
+<script>
+  (function() {
+    // Toast Feedback Utility
+    function showToast(message) {
+      const toast = document.getElementById('feedback-toast');
+      const toastText = document.getElementById('feedback-text');
+      if (!toast || !toastText) return;
+
+      toastText.textContent = message;
+      toast.classList.remove('translate-y-12', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-12', 'opacity-0');
+      }, 2600);
+    }
+
+    // Quick Action Buttons
+    const copyBtn = document.getElementById('copy-tokens-btn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        showToast('Tokens CSS copiados com sucesso para a área de transferência!');
+      });
+    }
+
+    const figmaBtn = document.getElementById('export-figma-btn');
+    if (figmaBtn) {
+      figmaBtn.addEventListener('click', () => {
+        showToast('Pacote Figma Variables v2.4 gerado e pronto para download!');
+      });
+    }
+
+    const jsonBtn = document.getElementById('json-spec-btn');
+    if (jsonBtn) {
+      jsonBtn.addEventListener('click', () => {
+        showToast('Especificação JSON exportada (Schema WCAG AAA compatível).');
+      });
+    }
+
+    // Interactive Tactic Checkboxes
+    const checkboxes = document.querySelectorAll('.tactic-checkbox');
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', function() {
+        const row = this.closest('.tactic-row');
+        if (!row) return;
+
+        const title = row.querySelector('.tactic-title');
+        const pill = row.querySelector('.score-pill');
+
+        if (this.checked) {
+          if (title) {
+            title.classList.add('line-through', 'text-on-surface-variant');
+            title.classList.remove('text-on-surface', 'font-bold');
+          }
+          if (pill) {
+            pill.textContent = '+25% WAM Concluído';
+            pill.className = 'score-pill font-label-sm text-label-sm px-2 py-1 rounded bg-emerald-50 text-emerald-800 font-bold';
+          }
+          showToast('Tática marcada! Aderência semanal atualizada.');
+        } else {
+          if (title) {
+            title.classList.remove('line-through', 'text-on-surface-variant');
+            title.classList.add('text-on-surface');
+          }
+          if (pill) {
+            pill.textContent = 'Pendente';
+            pill.className = 'score-pill font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container text-on-surface-variant';
+          }
+        }
+      });
+    });
+
+    // Interactive Session Timer Simulation
+    const timerToggleBtn = document.getElementById('timer-toggle-btn');
+    const timerToggleLabel = document.getElementById('timer-toggle-label');
+    const timerDisplay = document.getElementById('interactive-timer');
+    let isTimerRunning = true;
+    let secondsLeft = 1 * 3600 + 42 * 60 + 14;
+
+    function formatTime(s) {
+      const hrs = Math.floor(s / 3600).toString().padStart(2, '0');
+      const mins = Math.floor((s % 3600) / 60).toString().padStart(2, '0');
+      const secs = (s % 60).toString().padStart(2, '0');
+      return `${hrs}:${mins}:${secs}`;
+    }
+
+    let intervalId = setInterval(() => {
+      if (isTimerRunning && secondsLeft > 0) {
+        secondsLeft--;
+        if (timerDisplay) {
+          timerDisplay.textContent = formatTime(secondsLeft);
+        }
+      }
+    }, 1000);
+
+    if (timerToggleBtn) {
+      timerToggleBtn.addEventListener('click', () => {
+        isTimerRunning = !isTimerRunning;
+        const icon = timerToggleBtn.querySelector('.material-symbols-outlined');
+        if (isTimerRunning) {
+          if (timerToggleLabel) timerToggleLabel.textContent = 'Pausar Sessão';
+          if (icon) icon.textContent = 'pause';
+          showToast('Bloco Estratégico retomado.');
+        } else {
+          if (timerToggleLabel) timerToggleLabel.textContent = 'Retomar Sessão';
+          if (icon) icon.textContent = 'play_arrow';
+          showToast('Bloco Estratégico pausado. Lembre-se: não abra e-mails.');
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>

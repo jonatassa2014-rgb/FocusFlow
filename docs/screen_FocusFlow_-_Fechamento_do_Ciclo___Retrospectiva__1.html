@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#e5eeff","secondary-fixed":"#dde1ff","on-error-container":"#93000a","on-tertiary-fixed":"#23005c","on-secondary-fixed":"#001453","tertiary-container":"#7d4ce7","tertiary-fixed-dim":"#d0bcff","secondary-fixed-dim":"#b8c4ff","on-secondary-container":"#00217a","secondary":"#3755c3","surface-container-low":"#eff4ff","on-background":"#0b1c30","surface":"#f8f9ff","primary-fixed-dim":"#b4c5ff","on-tertiary-container":"#f6edff","error":"#ba1a1a","outline":"#737686","on-secondary":"#ffffff","on-secondary-fixed-variant":"#173bab","primary":"#004ac6","tertiary-fixed":"#e9ddff","error-container":"#ffdad6","on-primary-fixed-variant":"#003ea8","outline-variant":"#c3c6d7","surface-tint":"#0053db","on-primary-container":"#eeefff","surface-variant":"#d3e4fe","on-tertiary-fixed-variant":"#5516be","surface-dim":"#cbdbf5","on-surface-variant":"#434655","inverse-primary":"#b4c5ff","on-primary":"#ffffff","primary-fixed":"#dbe1ff","on-primary-fixed":"#00174b","on-tertiary":"#ffffff","inverse-on-surface":"#eaf1ff","surface-container-high":"#dce9ff","inverse-surface":"#213145","on-surface":"#0b1c30","background":"#f8f9ff","primary-container":"#2563eb","tertiary":"#632ecd","surface-container-lowest":"#ffffff","on-error":"#ffffff","surface-bright":"#f8f9ff","secondary-container":"#708cfd","surface-container-highest":"#d3e4fe"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-mobile":"1rem","space-xl":"2rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","gutter":"1.5rem","space-xs":"0.25rem"},fontFamily:{"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-md":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"body-lg":["Inter"],"metric-stat":["Plus Jakarta Sans"]},fontSize:{"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"56px",fontWeight:"800"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-xl":["36px",{lineHeight:"44px",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",fontWeight:"800"}],"headline-lg":["28px",{lineHeight:"36px",fontWeight:"700"}],"headline-xl-mobile":["26px",{lineHeight:"34px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"metric-stat":["32px",{lineHeight:"38px",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center gap-space-sm bg-surface-container-low"><img alt="FocusFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vn6J2HboaetUMqGSzZwcTohi1TezSzSrB7oLuTe_IncHo048qO76_3L-Ilw35In7J_OSgU7iSgxVj-H3SGs1i3JoPoN4OVaUFcDiYt6IAu7yc6KHRcrexjJ2F-lQaZdQXAGJ7z8Eazcui6i2d_b8-zhubW2WsnqHNJy7HVwA931A5oolUiYZB6Jg9WNzi6Ao7pbnrynKV3XEJ3cxWxBTSToGeWZPwn7tA7jDO1_iNphFIfdc7jIz5mlOUf"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">FocusFlow</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">12 Week System</span></div></div><div class="px-gutter py-space-sm"><div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-body-lg">bolt</span><div><p class="font-label-sm text-label-sm text-on-surface-variant">Meta de Execução</p><p class="font-label-lg text-label-lg text-on-surface">Target: 85% WAM</p></div></div><span class="px-space-xs py-0.5 rounded bg-primary-container font-label-sm text-label-sm text-on-primary-container font-bold">W03</span></div></div><nav class="flex flex-col gap-1 px-space-md py-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="painel-de-execucao" href="#"><span>Painel de Execução</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="visao-inspiradora" href="#"><span>Visão Inspiradora</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="planejamento-do-ciclo" href="#"><span>Planejamento do Ciclo</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="agenda-de-blocos" href="#"><span>Agenda de Blocos</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placar-semanal-wam" href="#"><span>Placar Semanal &amp; WAM</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="focusflow-configuracoes-conta" href="#"><span>Configurações &amp; Conta</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="bg-surface-container-highest p-space-sm rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary text-body-lg">pace</span><div><p class="font-label-sm text-label-sm text-on-surface-variant">Ritmo do Ano</p><p class="font-label-md text-label-md text-on-surface">12 Semanas = 1 Ano</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-body-md">info</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-semibold">Ciclo 1 • Semana 3 de 12 (Dia 18)</span></div><div class="hidden xl:flex items-center gap-space-xs w-40 bg-surface-container-highest rounded-full h-2 overflow-hidden"><div class="bg-primary-container h-full w-[25%]"></div></div><span class="hidden xl:inline-block font-label-sm text-label-sm text-on-surface-variant">25% concluído</span></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-md py-2 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-body-lg">add</span><span>Nova Tática</span></button><button aria-label="Notificações" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyeOG2SG9y2LZOxiQdtK5pXB_09lvHgJMmEuJQwbnBoRC4I8m3TCzyhPE3kVT3tw_g-uLdO4CAxPjuFfXmRs3B_K6xWoxfHbpahFj0Ts4v_hc5QAkfHD9o8ugSa2hem91rbxYtGHA_yQvQO1D4oFjZnw03AXh8AtGB5PFyJoDBFf-f-ZkXYgojfO39yh_3RR2Zkjma-WPpOw04TK36FO3sOfD7_Jk3-ginYW8ychQzwN_JP_wJnr1hlA"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Alexandre Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Performer</span></div><span class="material-symbols-outlined text-on-surface-variant text-body-md">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface px-gutter min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Top Meta / Sub-header Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary-container/10 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+          Ritual de Fechamento do Ciclo • A 13ª Semana
+        </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-body-sm">calendar_month</span>
+          31/03/2025 a 06/04/2025
+        </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-body-sm">handshake</span>
+          Parceiro WAM: <strong class="text-on-surface font-semibold">Carlos Mendes</strong>
+</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+        Review Final do Ciclo 01 &amp; Celebração
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-4xl">
+        Parabéns pelas 12 semanas de sprint de alta intensidade. Avalie o impacto real das ações táticas (Lead) nos resultados finais (Lag), celebre as vitórias conquistadas e recarregue as energias antes de iniciar o Ciclo 02.
+      </p>
+</div>
+<!-- Actions Top -->
+<div class="flex items-center gap-space-sm shrink-0 self-start lg:self-center">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded-lg shadow-sm hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-body-lg">download</span>
+<span>Exportar Relatório Executivo (PDF)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:bg-primary transition-all" type="button">
+<span>Iniciar Transição para o Ciclo 02</span>
+<span class="material-symbols-outlined text-body-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Hero Visual Accent Strip -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary via-primary-container to-secondary p-space-lg text-on-primary mb-space-xl shadow-md">
+<div class="absolute -right-10 -bottom-10 w-72 h-72 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-white/15 backdrop-blur-md flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-metric-stat" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Status Geral do Ciclo 01</span>
+<h2 class="font-headline-md text-headline-md tracking-tight font-bold text-on-primary">Sprint Anual de Q1 Finalizado com Sucesso</h2>
+<p class="font-body-md text-body-md text-on-primary-container">Você operou com 86.4% de disciplina tática semanal. Seu ano de 12 semanas gerou resultados equivalentes a 10 meses tradicionais.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-white/10 backdrop-blur-md px-space-md py-2 rounded-lg shrink-0">
+<span class="material-symbols-outlined text-primary-fixed">verified</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Performer Certificado</span>
+<span class="font-label-lg text-label-lg font-bold">Alexandre Costa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Scorecard KPI Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Execução Média Consolidada</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-body-lg">speed</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-metric-stat text-metric-stat text-on-surface font-bold tracking-tight">86.4%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 85% meta</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+          Padrão Ouro Moran Atingido (&gt;= 85%)
+        </div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Média de 12 semanas de sprint</span>
+<span class="material-symbols-outlined text-body-sm text-primary">trending_up</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Táticas Executadas</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-body-lg">task_alt</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-metric-stat text-metric-stat text-on-surface font-bold tracking-tight">208</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">/ 228</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+          91.2% de cumprimento tático
+        </div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Apenas 20 adiamentos no ciclo</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Taxa lead excelente</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Deep Work Blindado</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-body-lg">shield</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-metric-stat text-metric-stat text-on-surface font-bold tracking-tight">162h</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">estratégicas</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+          88% foco sem interrupções
+        </div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Blocos Estratégicos Matinais</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">13.5h / semana</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Metas Lag Atingidas</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-body-lg">flag</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mb-space-xs">
+<span class="font-metric-stat text-metric-stat text-on-surface font-bold tracking-tight">2 de 3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">conquistadas</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          +1 meta parcial em 80%
+        </div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Eficácia Estratégica (Lag/Lead)</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Alta correlação</span>
+</div>
+</div>
+</div>
+<!-- Weekly Sparkline Track Bar Chart (Inline SVG) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curva de Aderência Semanal (Semanas 01 a 12)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consistência do Lead Score WAM semanal contra a linha crítica de excelência (85%)</p>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="text-on-surface-variant">&gt;= 85% Meta batida</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-secondary-container"></span>
+<span class="text-on-surface-variant">&lt; 85% Desvio tático</span>
+</div>
+</div>
+</div>
+<!-- 12-week inline bar chart -->
+<div class="grid grid-cols-12 gap-2 items-end h-32 pt-4 px-2 bg-surface-container-low rounded-lg">
+<!-- W01 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">82%</span>
+<div class="w-full bg-secondary-container rounded-t h-[82%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W01</span>
+</div>
+<!-- W02 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">88%</span>
+<div class="w-full bg-primary rounded-t h-[88%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W02</span>
+</div>
+<!-- W03 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">91%</span>
+<div class="w-full bg-primary rounded-t h-[91%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W03</span>
+</div>
+<!-- W04 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">89%</span>
+<div class="w-full bg-primary rounded-t h-[89%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W04</span>
+</div>
+<!-- W05 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">85%</span>
+<div class="w-full bg-primary rounded-t h-[85%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W05</span>
+</div>
+<!-- W06 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">94%</span>
+<div class="w-full bg-primary rounded-t h-[94%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W06</span>
+</div>
+<!-- W07 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">90%</span>
+<div class="w-full bg-primary rounded-t h-[90%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W07</span>
+</div>
+<!-- W08 (dip) -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">74%</span>
+<div class="w-full bg-secondary-container rounded-t h-[74%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold text-secondary">W08</span>
+</div>
+<!-- W09 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">86%</span>
+<div class="w-full bg-primary rounded-t h-[86%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W09</span>
+</div>
+<!-- W10 (dip) -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">79%</span>
+<div class="w-full bg-secondary-container rounded-t h-[79%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold text-secondary">W10</span>
+</div>
+<!-- W11 -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">89%</span>
+<div class="w-full bg-primary rounded-t h-[89%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W11</span>
+</div>
+<!-- W12 (finish sprint) -->
+<div class="flex flex-col items-center gap-1 h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">90%</span>
+<div class="w-full bg-primary rounded-t h-[90%]"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold text-primary">W12</span>
+</div>
+</div>
+</div>
+<!-- Confrontation Table: Lead vs Lag Results -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-xl overflow-hidden">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Auditoria de Causalidade Metodológica</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Tabela de Confronto Final: Resultados Reais (Lead vs Lag)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comprovando a premissa Moran: o lead score semanal alto é a causa direta da conquista dos resultados finais.</p>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-body-md text-primary">balance</span>
+<span>Aderência Média Global: <strong>86.4%</strong></span>
+</div>
+</div>
+<!-- Responsive Table Wrapper -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md rounded-l-lg">Meta Estratégica</th>
+<th class="py-3 px-space-md">Pilar / Categoria</th>
+<th class="py-3 px-space-md">Lead Score Médio</th>
+<th class="py-3 px-space-md">Resultado Esperado (Lag)</th>
+<th class="py-3 px-space-md">Resultado Real Alcançado</th>
+<th class="py-3 px-space-md text-right rounded-r-lg">Status Final</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1: MRR -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary-container/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-body-md">monetization_on</span>
+</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Meta 1: Aumentar receita recorrente (MRR) em 25%</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sprint focado em prospecção outbound B2B e expansão da base</p>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+                B2B / Comercial
+              </span>
+</td>
+<td class="py-4 px-space-md font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-bold text-on-surface">89.2%</span>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-md text-body-md text-on-surface">
+              +R$ 35.000 MRR
+            </td>
+<td class="py-4 px-space-md font-label-lg text-label-lg text-primary font-bold">
+              +R$ 38.400 MRR
+            </td>
+<td class="py-4 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Meta Superada (109%)
+              </span>
+</td>
+</tr>
+<!-- Row 2: Mobile -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-body-md">smartphone</span>
+</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Meta 2: Lançar novo módulo mobile para 500 beta testers</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lançamento do app nativo para iOS e Android em ciclo fechado</p>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+                Produto &amp; Eng.
+              </span>
+</td>
+<td class="py-4 px-space-md font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-bold text-on-surface">94.0%</span>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-md text-body-md text-on-surface">
+              500 testers onboarded
+            </td>
+<td class="py-4 px-space-md font-label-lg text-label-lg text-primary font-bold">
+              512 testers com NPS 68
+            </td>
+<td class="py-4 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-body-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Meta Atingida (102%)
+              </span>
+</td>
+</tr>
+<!-- Row 3: Physical Health -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-body-md">fitness_center</span>
+</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Meta 3: Rotina de alta energia e saúde física</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consistência de sono, nutrição e 4 sessões semanais de força</p>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+                Pessoal / Vida
+              </span>
+</td>
+<td class="py-4 px-space-md font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-bold text-on-surface">76.0%</span>
+</div>
+</td>
+<td class="py-4 px-space-md font-body-md text-body-md text-on-surface">
+              48 treinos de força
+            </td>
+<td class="py-4 px-space-md font-label-lg text-label-lg text-on-surface font-bold">
+              38 treinos realizados
+            </td>
+<td class="py-4 px-space-md text-right">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-body-sm">warning</span>
+                Parcial (79% - Alerta de Recuperação)
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Retrospective Structured Section (2 Columns) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md mb-space-xl">
+<!-- Col 1: What Worked -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Multiplicadores de Sucesso</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">O que funcionou excepcionalmente bem</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Práticas inegociáveis que devem ser preservadas e protegidas durante todo o próximo ciclo de 12 semanas:
+        </p>
+<ul class="flex flex-col gap-space-sm">
+<li class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-body-lg shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Blindagem inegociável do bloco estratégico das terças e quintas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero reuniões antes do meio-dia. Esse único hábito gerou o avanço técnico no MVP do mobile 2 semanas antes do prazo previsto.</span>
+</div>
+</li>
+<li class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-body-lg shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Alinhamento rigoroso de 15 min nas segundas com o WAM Carlos Mendes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">A cobrança mútua e pontual eliminou a procrastinação clássica de início de semana e impediu acúmulo de tarefas adiadas.</span>
+</div>
+</li>
+<li class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-body-lg shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dizer NÃO antecipado a convites que não sustentavam as 3 metas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clareza cirúrgica para declinar chamadas de prospecção fria e parcerias sem sinergia direta com a meta de MRR.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>3 alavancas validadas empiricamente</span>
+<span class="text-primary font-semibold">Incorporar ao Ciclo 02</span>
+</div>
+</div>
+<!-- Col 2: Deviations and Lessons -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">sync_problem</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Auditoria de Gargalos</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Onde houve desvio &amp; Lições Aprendidas</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Diagnóstico de atrito e correções de rota obrigatórias para o desenho tático do Ciclo 02:
+        </p>
+<ul class="flex flex-col gap-space-sm">
+<li class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-body-lg shrink-0 mt-0.5">report_problem</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Viagens operacionais na Semana 08 e 10 canibalizaram os treinos de força</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ao sair da rotina de casa, o plano de academia não tinha plano B (ex: treino com peso do corpo no quarto do hotel).</span>
+</div>
+</li>
+<li class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-body-lg shrink-0 mt-0.5">report_problem</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Falta de Buffer Block suficiente nas quintas-feiras</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vazamento crônico de e-mails urgentes para horários noturnos de descanso, reduzindo a qualidade do sono e a energia.</span>
+</div>
+</li>
+<li class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-body-lg shrink-0 mt-0.5">tune</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Ajuste para o Q2: Reduzir a meta física para 3 treinos fixos e blindar fins de tarde</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Substituir a meta irreal de 4 treinos diários por 3 sessões inegociáveis de 50 minutos com reserva estrita de agenda.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>3 ajustes integrados ao backlog do Q2</span>
+<span class="text-secondary font-semibold">Resolução priorizada</span>
+</div>
+</div>
+</div>
+<!-- Protocol 13th Week: Deliberate Rest & Celebration -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-sm mb-space-xl">
+<div class="flex flex-col lg:flex-row gap-space-lg items-start">
+<!-- Media / Celebration Focus Card -->
+<div class="w-full lg:w-1/3 shrink-0">
+<div class="relative rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<div class="h-44 bg-cover bg-center" data-alt="A serene, minimalist executive desk with a warm coffee cup, an open journal with notes, soft morning light flowing through large window, tranquil Scandinavian aesthetic with subtle cool blue and warm slate accents" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMidd9BgYAsYa_d7D-N_U74TEHLsqYINE-B87UBYuLTxv6YTXX5PrvWuBq9EghbTrhCavHEMo_t4xguMXeFCNCi4rshbG845e9I-466k8uhbXugmC-_6p-9ky_-W6nXSWlGOqWjIY1CaCIvvJFokckEd0vEWL59eS5BpyNgzG_eu_ZPAz3LoXqPxJMS6eCMpPAgNPwZFYx9UvwXWnL3N_Fgs4iiVn2vqnsx9xJ_R8QaKYUp8uKLdnjzg')"></div>
+<div class="p-space-md">
+<span class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">Ritual Sagrado</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Descanso Não É Prêmio, É Estratégia</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              "Sem o ritual deliberado da 13ª semana, o sprint de 12 semanas vira uma maratona exaustiva tradicional. Desacelere propositalmente." — Brian P. Moran
+            </p>
+</div>
+</div>
+</div>
+<!-- Checklist & Rituals Content -->
+<div class="w-full lg:w-2/3 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">spa</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Protocolo da 13ª Semana: Recarga &amp; Celebração</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              31/03 a 06/04
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Complete os 4 rituais essenciais de transição para limpar o buffer mental, recarregar sua capacidade executiva e entrar no Ciclo 02 com clareza máxima.
+          </p>
+<!-- Interactive Checklist -->
+<div class="space-y-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors shadow-sm">
+<input checked="" class="mt-1 w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold line-through opacity-75">
+                  Conduzir Reunião WAM Final de 30 min de celebração com Carlos Mendes
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Concluído em 31/03 às 09:00. Alinhamento de métricas e celebração mútua da marca de 86.4%.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors shadow-sm">
+<input class="mt-1 w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">
+                  Desconexão digital total na sexta-feira (Breakout Day ampliado)
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Agendado para 04/04. Notificações do FocusFlow, Slack e e-mail pausadas por 24 horas consecutivas.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors shadow-sm">
+<input class="mt-1 w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">
+                  Recompensa do Performer: Jantar de comemoração pela meta de MRR batida
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reserva confirmada no restaurante preferido para celebrar o salto de faturamento com a família.</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg cursor-pointer hover:bg-surface-container-low transition-colors shadow-sm">
+<input class="mt-1 w-5 h-5 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">
+                  Sessão de 2 horas para revisar a Visão de Longo Prazo e rascunhar as 3 Metas do Ciclo 02
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Previsto para domingo (06/04, 16h). O ponto de partida será o módulo de Planejamento do Ciclo.</span>
+</div>
+</label>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Progresso do Ritual: <strong>1 de 4 tarefas concluídas (25%)</strong></span>
+<span class="text-primary font-semibold">Semana em andamento</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Big Callout Banner for Q2 Cycle Transition -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-md mb-space-xl relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-lg relative z-10">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-headline-lg">rocket_launch</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">O Próximo Ano Começa Agora</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Pronto para o próximo sprint de 12 semanas?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Os dados do Ciclo 01 serão arquivados com segurança no seu histórico analítico. Suas métricas de base, taxas de velocidade e lições aprendidas serão sugeridas automaticamente na montagem do <strong>Ciclo 02 (Q2 2025: 07/04 a 29/06)</strong>.
+          </p>
+</div>
+</div>
+<div class="flex flex-col items-center sm:items-end gap-space-xs shrink-0 w-full lg:w-auto">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-3.5 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-body-lg">edit_calendar</span>
+<span>Configurar Metas e Táticas do Ciclo 02 (Q2)</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors py-1" type="button">
+          Manter Ciclo 01 aberto para ajustes por mais 3 dias
+        </button>
+</div>
+</div>
+</div>
+<!-- System Navigation Footer -->
+<div class="flex items-center justify-between pt-space-lg pb-space-md">
+<a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-body-lg">arrow_back</span>
+<span>Voltar para Configurações &amp; Conta</span>
+</a>
+<div class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Fechamento do Ciclo</span>
+<span class="material-symbols-outlined text-body-sm text-outline-variant">chevron_right</span>
+<span class="font-semibold text-on-surface">Transição de Sprint</span>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary hover:text-primary-container font-label-lg text-label-lg font-bold transition-colors" href="#">
+<span>Avançar para Planejamento do Ciclo 02</span>
+<span class="material-symbols-outlined text-body-lg">arrow_forward</span>
+</a>
+</div>
+</div></main></div></body></html>

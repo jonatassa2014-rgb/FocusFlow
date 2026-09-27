@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#003ea8","secondary-fixed-dim":"#b8c4ff","on-surface":"#0b1c30","outline-variant":"#c3c6d7","surface-variant":"#d3e4fe","surface-bright":"#f8f9ff","on-secondary":"#ffffff","inverse-primary":"#b4c5ff","on-surface-variant":"#434655","on-primary-container":"#eeefff","background":"#f8f9ff","on-tertiary":"#ffffff","on-background":"#0b1c30","surface-dim":"#cbdbf5","inverse-on-surface":"#eaf1ff","inverse-surface":"#213145","secondary":"#3755c3","primary-container":"#2563eb","on-secondary-container":"#00217a","on-primary":"#ffffff","on-primary-fixed":"#00174b","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-error-container":"#93000a","secondary-fixed":"#dde1ff","on-secondary-fixed":"#001453","tertiary-container":"#7d4ce7","tertiary-fixed":"#e9ddff","surface-container-high":"#dce9ff","surface":"#f8f9ff","tertiary-fixed-dim":"#d0bcff","on-secondary-fixed-variant":"#173bab","on-tertiary-fixed":"#23005c","surface-container":"#e5eeff","surface-container-low":"#eff4ff","surface-container-highest":"#d3e4fe","surface-tint":"#0053db","tertiary":"#632ecd","on-tertiary-container":"#f6edff","primary-fixed":"#dbe1ff","outline":"#737686","secondary-container":"#708cfd","on-tertiary-fixed-variant":"#5516be","on-error":"#ffffff","primary":"#004ac6","error-container":"#ffdad6","primary-fixed-dim":"#b4c5ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xs":"0.25rem","gutter":"1.5rem","margin":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem","margin-mobile":"1rem","space-xl":"2rem","gutter-mobile":"1rem"},fontFamily:{"metric-stat":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"label-sm":["Inter"],"label-lg":["Inter"],"body-lg":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"]},fontSize:{"metric-stat":["32px",{lineHeight:"38px",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["28px",{lineHeight:"36px",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"headline-xl":["36px",{lineHeight:"44px",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-hero":["48px",{lineHeight:"56px",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"30px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-xl-mobile":["26px",{lineHeight:"34px",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",fontWeight:"800"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center gap-space-sm bg-surface-container-low"><img alt="FocusFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vn6J2HboaetUMqGSzZwcTohi1TezSzSrB7oLuTe_IncHo048qO76_3L-Ilw35In7J_OSgU7iSgxVj-H3SGs1i3JoPoN4OVaUFcDiYt6IAu7yc6KHRcrexjJ2F-lQaZdQXAGJ7z8Eazcui6i2d_b8-zhubW2WsnqHNJy7HVwA931A5oolUiYZB6Jg9WNzi6Ao7pbnrynKV3XEJ3cxWxBTSToGeWZPwn7tA7jDO1_iNphFIfdc7jIz5mlOUf"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">FocusFlow</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">12 Week System</span></div></div><div class="px-gutter py-space-sm"><div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-body-lg">bolt</span><div><p class="font-label-sm text-label-sm text-on-surface-variant">Meta de Execução</p><p class="font-label-lg text-label-lg text-on-surface">Target: 85% WAM</p></div></div><span class="px-space-xs py-0.5 rounded bg-primary-container font-label-sm text-label-sm text-on-primary-container font-bold">W03</span></div></div><nav class="flex flex-col gap-1 px-space-md py-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="painel-de-execucao" href="#"><span class="material-symbols-outlined text-body-lg">speed</span><span>Painel de Execução</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="visao-inspiradora" href="#"><span class="material-symbols-outlined text-body-lg">explore</span><span>Visão Inspiradora</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="planejamento-do-ciclo" href="#"><span class="material-symbols-outlined text-body-lg">flag</span><span>Planejamento do Ciclo</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="agenda-de-blocos" href="#"><span class="material-symbols-outlined text-body-lg">calendar_clock</span><span>Agenda de Blocos</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="placar-semanal" href="#"><span class="material-symbols-outlined text-body-lg">leaderboard</span><span>Placar Semanal &amp; WAM</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors" data-path="configuracoes-e-conta" href="#"><span class="material-symbols-outlined text-body-lg">settings</span><span>Configurações &amp; Conta</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="bg-surface-container-highest p-space-sm rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary text-body-lg">pace</span><div><p class="font-label-sm text-label-sm text-on-surface-variant">Ritmo do Ano</p><p class="font-label-md text-label-md text-on-surface">12 Semanas = 1 Ano</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-body-md">info</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm px-space-md py-1.5 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-md text-label-md text-on-surface font-semibold">Ciclo 1 • Semana 3 de 12 (Dia 18)</span></div><div class="hidden xl:flex items-center gap-space-xs w-40 bg-surface-container-highest rounded-full h-2 overflow-hidden"><div class="bg-primary-container h-full w-[25%]"></div></div><span class="hidden xl:inline-block font-label-sm text-label-sm text-on-surface-variant">25% concluído</span></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-md py-2 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-body-lg">add</span><span>Nova Tática</span></button><button aria-label="Notificações" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyeOG2SG9y2LZOxiQdtK5pXB_09lvHgJMmEuJQwbnBoRC4I8m3TCzyhPE3kVT3tw_g-uLdO4CAxPjuFfXmRs3B_K6xWoxfHbpahFj0Ts4v_hc5QAkfHD9o8ugSa2hem91rbxYtGHA_yQvQO1D4oFjZnw03AXh8AtGB5PFyJoDBFf-f-ZkXYgojfO39yh_3RR2Zkjma-WPpOw04TK36FO3sOfD7_Jk3-ginYW8ychQzwN_JP_wJnr1hlA"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Alexandre Costa</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-1">Performer</span></div><span class="material-symbols-outlined text-on-surface-variant text-body-md">expand_more</span></div></div></header><main class="w-full pt-16 bg-surface px-gutter min-h-screen"><div class="flex flex-col w-full">
+<!-- Script to guarantee 5th sidebar item active state in accordance with spec -->
+<script>
+    (function() {
+      const activeLink = document.querySelector('aside nav a[data-path="placar-semanal"]');
+      if (activeLink) {
+        document.querySelectorAll('aside nav a').forEach(el => {
+          el.className = "flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container hover:text-on-surface transition-colors";
+        });
+        activeLink.className = "flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container font-bold shadow-sm transition-colors";
+      }
+    })();
+  </script>
+<!-- CONTENT WRAPPER -->
+<div class="flex flex-col gap-space-xl py-space-md max-w-[1440px] mx-auto w-full">
+<!-- 1. CABEÇALHO DA PÁGINA COM AÇÕES E METODOLOGIA -->
+<header class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold">
+            Sistema de Mensuração
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+            The 12 Week Year
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">
+            Weekly Accountability Meeting (WAM)
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Placar Semanal &amp; Reunião WAM
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          A grandeza não é medida pelo que você pretende fazer, mas pelo que você executa. Uma semana com 85%+ de táticas concluídas garante estatisticamente o atingimento das metas do ciclo de 12 semanas.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 self-start lg:self-center">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-lg text-label-lg shadow-sm transition-all duration-150" type="button">
+<span class="material-symbols-outlined text-body-lg text-on-surface-variant">picture_as_pdf</span>
+<span>Exportar Relatório Semanal</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-md transition-all duration-150 group" type="button">
+<span class="material-symbols-outlined text-body-lg group-hover:scale-110 transition-transform">bolt</span>
+<span>Iniciar Reunião WAM (15 min)</span>
+</button>
+</div>
+</header>
+<!-- 2. CARDS DE SCORECARD DA SEMANA ATUAL (W03) -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Score Geral -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md transition-shadow hover:shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Lead Score Semanal</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Execução Consolidada</span>
+</div>
+<span class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-headline-sm">monitoring</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs my-1">
+<span class="font-display-hero text-display-hero text-on-surface tracking-tight">88.5%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ 100%</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="w-full bg-surface-container-highest rounded-full h-2 relative overflow-hidden">
+<div class="h-full rounded-full bg-primary-container" style="width: 88.5%;"></div>
+<div class="absolute top-0 bottom-0 left-[85%] w-0.5 bg-error z-10" title="Linha de Corte 85%"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-variant text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Meta Superada (≥85%)
+            </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">+4.2% vs W02</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Táticas Executadas vs Planejadas -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md transition-shadow hover:shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Táticas do Plano</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Ações Concluídas</span>
+</div>
+<span class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-headline-sm">checklist</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs my-1">
+<span class="font-display-hero text-display-hero text-on-surface tracking-tight">17</span>
+<span class="font-headline-md text-headline-md text-on-surface-variant font-medium">/ 19 táticas</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-body-md text-primary">task_alt</span>
+<span class="font-label-sm text-label-sm text-on-surface">17 entregues</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 justificadas p/ W04</span>
+</div>
+</div>
+<!-- Card 3: Horas em Deep Work -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md transition-shadow hover:shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Deep Work Blindado</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Blocos Estratégicos</span>
+</div>
+<span class="p-2 rounded-lg bg-tertiary-fixed text-tertiary">
+<span class="material-symbols-outlined text-headline-sm">hourglass_top</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs my-1">
+<span class="font-display-hero text-display-hero text-on-surface tracking-tight">13.5h</span>
+<span class="font-headline-md text-headline-md text-on-surface-variant font-medium">/ 15.0h</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-body-md text-tertiary">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">90.0% aderência</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">3 blocos de 4.5h</span>
+</div>
+</div>
+<!-- Card 4: Peer Accountability WAM -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md transition-shadow hover:shadow-md">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Accountability Peer</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Parceiro de Prestação</span>
+</div>
+<span class="p-2 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-headline-sm">groups</span>
+</span>
+</div>
+<div class="flex items-center gap-space-sm my-1">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm shrink-0" data-alt="Corporate headshot portrait of Carlos Mendes, a focused senior professional partner in business attire with clean lighting and blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBME3VUkZvlPLQO7YgcB-guqynWfOKrLnEzIpNPkBjWUWi-C81Gqs4HjoZJt1KvN9Nns5WgnZzFI3023sj4ijB7a4GzqI4osaREk_vgzv15MR4CDHJkpNjEyVETCHq_DEeWEACoxnSZBcloXFhj40cE9WMimtg5cU2DlP39OkC4YB4x824ff97ucsu2OJWPID2R2OzOx5ir8gFAo459nYQOmiM6al48JkAk1QeoMUwd2zBgtFfzIUQgXw"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Carlos Mendes</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Score dele:</span>
+<span class="font-label-md text-label-md text-primary font-bold">86.0%</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Próxima WAM:</span>
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">event</span>
+            Segunda, 09:00 (em 2d)
+          </span>
+</div>
+</div>
+</section>
+<!-- 3. GRÁFICO HISTÓRICO DAS 12 SEMANAS & EXECUTION THRESHOLD (85%) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">Histórico de Execução das 12 Semanas</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">Ciclo 1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Média acumulada do ciclo até agora: <strong class="text-on-surface font-semibold">84.9%</strong> (A caminho do Gold Standard de 85.0%+)
+          </p>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm text-on-surface-variant shrink-0">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span>Semana Atual (W03)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-sm bg-secondary-fixed-dim"></span>
+<span>Semanas Concluídas</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-error"></span>
+<span class="text-error font-semibold">Threshold 85%</span>
+</div>
+</div>
+</div>
+<!-- High Clarity Visualization Grid -->
+<div class="relative w-full pt-6 pb-2">
+<!-- 85% Target Indicator Line spanning chart -->
+<div class="absolute left-0 right-0 top-[28%] flex items-center z-10 pointer-events-none">
+<div class="w-full border-t-2 border-dashed border-error/70"></div>
+<span class="shrink-0 ml-2 px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold shadow-xs">
+            Meta 85% Target Threshold
+          </span>
+</div>
+<!-- 12-Week Bars Container -->
+<div class="grid grid-cols-12 gap-2 sm:gap-4 items-end h-64 pt-6 pb-4">
+<!-- W01 -->
+<div class="flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1 group-hover:font-bold group-hover:text-on-surface">82.0%</span>
+<div class="w-full bg-secondary-fixed-dim rounded-t-lg transition-all duration-300 group-hover:opacity-90" style="height: 82%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W01</span>
+</div>
+<!-- W02 -->
+<div class="flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-1 group-hover:font-bold group-hover:text-on-surface">84.3%</span>
+<div class="w-full bg-secondary-fixed-dim rounded-t-lg transition-all duration-300 group-hover:opacity-90" style="height: 84.3%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W02</span>
+</div>
+<!-- W03 (Current Active) -->
+<div class="flex flex-col items-center h-full justify-end group relative">
+<span class="font-label-sm text-label-sm text-primary font-bold mb-1">88.5%</span>
+<div class="w-full bg-primary-container rounded-t-lg shadow-md transition-all duration-300 group-hover:scale-y-105" style="height: 88.5%;"></div>
+<span class="font-label-sm text-label-sm text-primary font-bold mt-2 flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container inline-block"></span>
+              W03
+            </span>
+</div>
+<!-- W04 (Projected / Future) -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W04</span>
+</div>
+<!-- W05 -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W05</span>
+</div>
+<!-- W06 -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W06</span>
+</div>
+<!-- W07 -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W07</span>
+</div>
+<!-- W08 -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W08</span>
+</div>
+<!-- W09 -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W09</span>
+</div>
+<!-- W10 -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W10</span>
+</div>
+<!-- W11 -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">W11</span>
+</div>
+<!-- W12 (Grand Finale) -->
+<div class="flex flex-col items-center h-full justify-end group opacity-60">
+<span class="font-label-sm text-label-sm text-outline-variant mb-1">--</span>
+<div class="w-full bg-surface-container rounded-t-lg border-2 border-dashed border-outline-variant/40" style="height: 40%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 font-bold">W12</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. TABELA ANALÍTICA DE APURAÇÃO POR META DO CICLO -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-container-lowest">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Apuração Semanal por Meta do Ciclo</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conexão direta entre táticas executadas (Lead) e os marcos quantitativos (Lag Indicators).</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Semana em Foco:</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">
+            Semana 3 / 12
+          </span>
+</div>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-lg">Meta Estratégica do Ciclo</th>
+<th class="py-3 px-space-md">Pilar / Categoria</th>
+<th class="py-3 px-space-md text-center">Táticas Semanais</th>
+<th class="py-3 px-space-md">Lead Score</th>
+<th class="py-3 px-space-lg">Lag Indicator (Impacto Real)</th>
+<th class="py-3 px-space-lg text-right">Avaliação WAM</th>
+</tr>
+</thead>
+<tbody class="divide-none">
+<!-- Row 1: Comercial -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Meta 1: Aumentar receita recorrente (MRR) em 25%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pipeline B2B e contratos de expansão enterprise</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                  Comercial &amp; B2B
+                </span>
+</td>
+<td class="py-4 px-space-md text-center">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">8 de 9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">concluídas</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">88.9%</span>
+<div class="w-16 bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 88.9%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-body-md">trending_up</span>
+<span class="font-label-lg text-label-lg font-bold">MRR subiu +R$ 14.200</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Fechados 2 contas)</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-variant text-on-primary-fixed-variant font-label-md text-label-md font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Excelente
+                </span>
+</td>
+</tr>
+<!-- Row 2: Produto -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-container shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Meta 2: Lançar novo módulo mobile para 500 beta testers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sprint de estabilização do app iOS e Android</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium">
+                  Produto &amp; Eng.
+                </span>
+</td>
+<td class="py-4 px-space-md text-center">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">5 de 5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">concluídas</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">100%</span>
+<div class="w-16 bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary-container h-full" style="width: 100%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-body-md">rocket_launch</span>
+<span class="font-label-lg text-label-lg font-bold">420 beta testers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">onboarded (84% meta)</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-md text-label-md font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Impecável
+                </span>
+</td>
+</tr>
+<!-- Row 3: Saúde & Pessoal -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Meta 3: Rotina de alta energia e saúde física</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Treinos de força matinais, sono regrado e nutrição</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-md">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                  Pessoal / Vida
+                </span>
+</td>
+<td class="py-4 px-space-md text-center">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">4 de 5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">concluídas</span>
+</td>
+<td class="py-4 px-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-bold">80.0%</span>
+<div class="w-16 bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full" style="width: 80%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-outline text-body-md">fitness_center</span>
+<span class="font-label-lg text-label-lg font-bold">3 treinos feitos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(1 postergado na quinta)</span>
+</div>
+</td>
+<td class="py-4 px-space-lg text-right">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Atenção (&lt;85%)
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- 5. O RITUAL DA REUNIÃO WAM (WEEKLY ACCOUNTABILITY MEETING - 15 MIN) & REFLEXÃO -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Painel dos 3 Passos Inegociáveis -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-headline-sm">forum</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">O Ritual WAM (15 Minutos)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estrutura oficial de Brian P. Moran: sem rodeios, 100% prestação de contas.</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm font-bold text-primary">
+            3 Passos
+          </span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Passo 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-sm shrink-0">1</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">
+                Como foi minha pontuação na semana passada?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Confrontar a realidade objetiva sem justificativas ou desculpas. Score consolidado da Semana 3: <strong class="text-primary font-bold">88.5% (Atingido com sucesso)</strong>.
+              </p>
+</div>
+</div>
+<!-- Passo 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<span class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-sm shrink-0">2</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">
+                Se não atingi 85% em alguma meta, o que causou a falha?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                A Meta 3 ficou em 80.0%. Causa raiz: reunião de emergência com cliente na quinta que quebrou o bloco de buffer da tarde, deslocando o treino matinal programado.
+              </p>
+</div>
+</div>
+<!-- Passo 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<span class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-label-sm shrink-0">3</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">
+                O que me comprometo a executar na próxima semana (Semana 4)?
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Alinhar o plano de 20 táticas da W04 e blindar antecipadamente 15 horas de Bloco Estratégico antes do meio-dia de segunda-feira.
+              </p>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md text-primary">verified</span>
+            Roteiro validado com Carlos Mendes
+          </span>
+<button class="text-primary font-label-md text-label-md font-bold hover:underline flex items-center gap-0.5" type="button">
+            Ver gravação de áudio da última WAM
+            <span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Caixa de Notas / Reflexão do Performer -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-headline-sm">edit_note</span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Reflexão do Performer</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Semana 3 • Registro</span>
+</div>
+<div class="relative flex-1 flex flex-col">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold mb-1.5" for="reflexao-performer">
+            Lições Aprendidas &amp; Ajustes de Ritmo
+          </label>
+<div class="bg-surface-container-low p-space-md rounded-lg flex-1 font-body-sm text-body-sm text-on-surface leading-relaxed flex flex-col justify-between">
+<p>
+              “A blindagem dos Blocos Estratégicos de terça e quinta fez toda a diferença para fechar os contratos B2B. Foi a primeira semana em que não abri o e-mail antes das 11:30 nos dias estratégicos. O resultado prático foi bater 88.9% no lead score da Meta 1 e adicionar R$ 14.200 de MRR.”
+            </p>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Salvo automaticamente às 17:42</span>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors" type="button">
+                Editar Nota
+              </button>
+</div>
+</div>
+</div>
+<!-- Banner de Mentalidade The 12 Week Year -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-sm shrink-0">psychology</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong>Lembrete Mental:</strong> “Responsabilidade não são as consequências, mas a posse voluntária das suas ações e resultados.”
+          </p>
+</div>
+</div>
+</section>
+<!-- 6. RODAPÉ DE NAVEGAÇÃO DE FLUXO METODOLÓGICO -->
+<nav class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-lg bg-surface-container-lowest rounded-xl shadow-sm mb-space-xl">
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-body-lg">arrow_back</span>
+<span>Voltar à Agenda de Blocos</span>
+</a>
+<div class="flex items-center gap-space-xs text-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-on-surface font-bold">
+          Passo 5 de 6 da Metodologia FocusFlow
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+          (Scorecard &amp; Accountability)
+        </span>
+</div>
+<a class="flex items-center gap-space-xs px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-all group" href="#">
+<span>Ir para Configurações &amp; Conta</span>
+<span class="material-symbols-outlined text-body-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</nav>
+</div>
+</div></main></div></body></html>
