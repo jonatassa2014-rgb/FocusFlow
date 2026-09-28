@@ -58,13 +58,13 @@ export const LoginPage: React.FC = () => {
 
   const handleGoogleLogin = async () => {
     setIsSubmitting(true);
+    setErrorMessage('');
     const res = await signInWithGoogle();
-    setIsSubmitting(false);
-    if (res.success) {
-      navigate(destination, { replace: true });
-    } else {
+    if (!res.success) {
+      setIsSubmitting(false);
       setErrorMessage(res.error || 'Não foi possível conectar com o Google.');
     }
+    // Obs: Se tiver sucesso, o navegador é redirecionado externamente para a tela de autenticação do Google.
   };
 
   const handleGuestLogin = () => {

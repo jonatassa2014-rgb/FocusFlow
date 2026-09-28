@@ -10,7 +10,7 @@ export const cyclesService = {
       .eq('is_sealed', false)
       .order('created_at', { ascending: false })
       .limit(1)
-      .single();
+      .maybeSingle();
 
     if (error && error.code !== 'PGRST116') throw error; // PGRST116 is "No rows found"
     
@@ -28,6 +28,48 @@ export const cyclesService = {
           partnerWamScore: 0 // Fetch from partner wam if possible
        } as Cycle;
     }
+
+    // Se o usuário não possui nenhum ciclo ativo no banco, cria o primeiro ciclo
+    try {
+      const today = new Date();
+      const startDate = today.toISOString().split('T')[0];
+      const endDateObj = new Date(today);
+      endDateObj.setDate(endDateObj.getDate() + 84); // 12 semanas (84 dias)
+      const endDate = endDateObj.toISOString().split('T')[0];
+
+      const { data: newCycle, error: createError } = await supabase
+        .from('cycles')
+        .insert({
+          user_id: userId,
+          number: 1,
+          name: 'Ciclo 01 • Q1 Execution',
+          start_date: startDate,
+          end_date: endDate,
+          current_week: 1,
+          is_sealed: false,
+          partner_name: ''
+        })
+        .select()
+        .single();
+
+      if (!createError && newCycle) {
+        return {
+          id: newCycle.id,
+          number: newCycle.number,
+          name: newCycle.name,
+          currentWeek: newCycle.current_week,
+          currentDay: 1,
+          startDate: newCycle.start_date,
+          endDate: newCycle.end_date,
+          isSealed: newCycle.is_sealed,
+          partnerName: newCycle.partner_name || '',
+          partnerWamScore: 0
+        } as Cycle;
+      }
+    } catch (e) {
+      console.warn('[FocusFlow] Não foi possível provisionar ciclo inicial:', e);
+    }
+
     return null;
   },
 

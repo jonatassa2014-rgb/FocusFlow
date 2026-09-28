@@ -1,24 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useFocusFlow } from '../context/FocusFlowContext';
 
 export const VisionView: React.FC = () => {
   const { vision, updateVision, setIsVisionModalOpen, cycle, goals } = useFocusFlow();
 
-  const [headline, setHeadline] = useState(vision.headline);
+  const [headline, setHeadline] = useState(vision.headline || '');
   const [longTermVision, setLongTermVision] = useState(
-    vision.longTermVision || vision.threeToFiveYearDeclaration ||
-      'Em 3 a 5 anos, liderar uma organização de software altamente lucrativa, operando com excelência baseada no Ano de 12 Semanas, mantendo saúde física impecável e presença constante com a família.'
+    vision.longTermVision || vision.threeToFiveYearDeclaration || ''
   );
-  const [cycleVision, setCycleVision] = useState(
-    vision.cycleVision ||
-      'Ao final destas 12 semanas, alcançar 50 clientes ativos no SaaS, manter rotina de 5 treinos semanais e consistência de 85% de execução no WAM.'
-  );
-  const [inactionCost, setInactionCost] = useState(
-    vision.inactionCost ||
-      'Se eu não agir com foco implacável nas próximas 12 semanas, continuarei preso na esteira do operacional sem escala, adiando a liberdade da minha família por mais um ano e desperdiçando meu potencial de mercado em discussões triviais.'
-  );
-  const [emotionalWhy, setEmotionalWhy] = useState(vision.emotionalWhy);
+  const [cycleVision, setCycleVision] = useState(vision.cycleVision || '');
+  const [inactionCost, setInactionCost] = useState(vision.inactionCost || '');
+  const [emotionalWhy, setEmotionalWhy] = useState(vision.emotionalWhy || '');
   const [showSavedFeedback, setShowSavedFeedback] = useState(false);
+
+  useEffect(() => {
+    if (vision) {
+      setHeadline(vision.headline || '');
+      setLongTermVision(vision.longTermVision || vision.threeToFiveYearDeclaration || '');
+      setCycleVision(vision.cycleVision || '');
+      setInactionCost(vision.inactionCost || '');
+      setEmotionalWhy(vision.emotionalWhy || '');
+    }
+  }, [vision]);
 
   const handleSave = () => {
     updateVision({

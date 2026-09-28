@@ -54,41 +54,58 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     // Se o Supabase estiver configurado, escuta a sessão remota
     if (isSupabaseConfigured) {
+      const hasAuthCodeInUrl = typeof window !== 'undefined' && (
+        window.location.search.includes('code=') ||
+        window.location.hash.includes('access_token=') ||
+        window.location.hash.includes('error=') ||
+        window.location.search.includes('error=')
+      );
+
       supabase.auth.getSession().then(({ data: { session } }) => {
         setSession(session);
         if (session?.user) {
           const authUser = mapSupabaseUser(session.user);
           setUser(authUser);
           localStorage.setItem(LOCAL_STORAGE_USER_KEY, JSON.stringify(authUser));
+          setIsLoading(false);
         } else {
-          // Mantém login local se existir
-          const localUser = localStorage.getItem(LOCAL_STORAGE_USER_KEY);
-          if (localUser) {
-            setUser(JSON.parse(localUser));
+          // Se houver código OAuth na URL, aguarda a resolução do onAuthStateChange
+          if (!hasAuthCodeInUrl) {
+            const localUser = localStorage.getItem(LOCAL_STORAGE_USER_KEY);
+            if (localUser) {
+              setUser(JSON.parse(localUser));
+            }
+            setIsLoading(false);
           }
         }
-        setIsLoading(false);
       });
 
       const {
         data: { subscription },
-      } = supabase.auth.onAuthStateChange((_event, session) => {
+      } = supabase.auth.onAuthStateChange((event, session) => {
         setSession(session);
         if (session?.user) {
           const authUser = mapSupabaseUser(session.user);
           setUser(authUser);
           localStorage.setItem(LOCAL_STORAGE_USER_KEY, JSON.stringify(authUser));
-        } else {
-          // Se deslogou no Supabase
-          if (!localStorage.getItem(LOCAL_STORAGE_USER_KEY)) {
-            setUser(null);
-          }
+        } else if (event === 'SIGNED_OUT') {
+          setUser(null);
+          localStorage.removeItem(LOCAL_STORAGE_USER_KEY);
         }
         setIsLoading(false);
       });
 
+      // Timeout de segurança para desbloquear a interface caso a troca OAuth falhe
+      let safetyTimer: any;
+      if (hasAuthCodeInUrl) {
+        safetyTimer = setTimeout(() => {
+          setIsLoading(false);
+        }, 5000);
+      }
+
       return () => {
         subscription.unsubscribe();
+        if (safetyTimer) clearTimeout(safetyTimer);
       };
     } else {
       // Modo Demonstração / Local
@@ -184,13 +201,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const signInWithGoogle = async () => {
     try {
       if (isSupabaseConfigured) {
-        const { error } = await supabase.auth.signInWithOAuth({
+        const { data, error } = await supabase.auth.signInWithOAuth({
           provider: 'google',
           options: {
             redirectTo: window.location.origin + '/hoje',
           },
         });
         if (error) return { success: false, error: error.message };
+        if (data?.url) {
+          window.location.href = data.url;
+        }
         return { success: true };
       } else {
         // Fallback local demo

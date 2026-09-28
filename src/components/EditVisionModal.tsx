@@ -31,6 +31,7 @@ export const EditVisionModal: React.FC<EditVisionModalProps> = ({
   const [cycleVision, setCycleVision] = useState('');
   const [emotionalWhy, setEmotionalWhy] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
@@ -39,11 +40,11 @@ export const EditVisionModal: React.FC<EditVisionModalProps> = ({
       setEmotionalWhy(vision?.emotionalWhy || '');
       setErrorMessage('');
     }
-  }, [isOpen]);
+  }, [isOpen, vision]);
 
   if (!isOpen) return null;
 
-  const handleSave = (e: React.FormEvent) => {
+  const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!longTermVision.trim() && !cycleVision.trim() && !emotionalWhy.trim()) {
@@ -51,14 +52,20 @@ export const EditVisionModal: React.FC<EditVisionModalProps> = ({
       return;
     }
 
-    updateVision({
-      longTermVision: longTermVision.trim(),
-      threeToFiveYearDeclaration: longTermVision.trim(),
-      cycleVision: cycleVision.trim(),
-      emotionalWhy: emotionalWhy.trim(),
-    });
-
-    handleClose();
+    try {
+      setIsSaving(true);
+      await updateVision({
+        longTermVision: longTermVision.trim(),
+        threeToFiveYearDeclaration: longTermVision.trim(),
+        cycleVision: cycleVision.trim(),
+        emotionalWhy: emotionalWhy.trim(),
+      });
+      handleClose();
+    } catch (err: any) {
+      setErrorMessage(err.message || 'Erro ao salvar alterações da visão.');
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   return (
@@ -159,10 +166,20 @@ export const EditVisionModal: React.FC<EditVisionModalProps> = ({
             </button>
             <button
               type="submit"
-              className="flex items-center gap-1.5 px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary text-[13px] font-semibold shadow-sm transition-all cursor-pointer"
+              disabled={isSaving}
+              className="flex items-center gap-1.5 px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary text-[13px] font-semibold shadow-sm transition-all cursor-pointer disabled:opacity-50"
             >
-              <span className="material-symbols-outlined text-[18px]">check</span>
-              <span>Salvar Visão</span>
+              {isSaving ? (
+                <>
+                  <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  <span>Salvando...</span>
+                </>
+              ) : (
+                <>
+                  <span className="material-symbols-outlined text-[18px]">check</span>
+                  <span>Salvar Visão</span>
+                </>
+              )}
             </button>
           </div>
         </form>

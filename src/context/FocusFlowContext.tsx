@@ -259,12 +259,24 @@ export const FocusFlowProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   };
 
   const updateVisionMutation = useMutation({
-    mutationFn: (updates: Partial<VisionStatement>) => visionService.saveVision(cycle!.id, user!.id, updates),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: ['vision'] })
+    mutationFn: async (updates: Partial<VisionStatement>) => {
+      let targetCycleId = cycle?.id;
+      if (!targetCycleId && user) {
+        const current = await cyclesService.getCurrentCycle(user.id);
+        targetCycleId = current?.id;
+      }
+      if (!targetCycleId || !user) {
+        throw new Error('Nenhum ciclo ativo ou usuário autenticado encontrado para salvar a visão.');
+      }
+      return visionService.saveVision(targetCycleId, user.id, updates);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['vision'] });
+    }
   });
 
-  const updateVision = (updated: Partial<VisionStatement>) => {
-    if (cycle && user) updateVisionMutation.mutate(updated);
+  const updateVision = async (updated: Partial<VisionStatement>) => {
+    return updateVisionMutation.mutateAsync(updated);
   };
 
   const updateGoalMutation = useMutation({

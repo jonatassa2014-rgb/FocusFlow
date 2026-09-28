@@ -28,56 +28,80 @@ export const visionService = {
     return null;
   },
 
-  async upsertVision(cycleId: string, userId: string, vision: Partial<VisionStatement>) {
-    // Check if exists
-    const existing = await this.getVision(cycleId, userId);
-    const payload = {
-        user_id: userId,
-        cycle_id: cycleId,
-        headline: vision.headline || existing?.headline || '',
-        long_term_vision: vision.longTermVision !== undefined ? vision.longTermVision : existing?.longTermVision,
-        cycle_vision: vision.cycleVision !== undefined ? vision.cycleVision : existing?.cycleVision,
-        emotional_why: vision.emotionalWhy !== undefined ? vision.emotionalWhy : existing?.emotionalWhy,
-        inaction_cost: vision.inactionCost !== undefined ? vision.inactionCost : existing?.inactionCost,
-        last_read_date: vision.lastReadDate !== undefined ? vision.lastReadDate : existing?.lastReadDate
+  async saveVision(cycleId: string, userId: string, vision: Partial<VisionStatement>) {
+    // 1. Busca registro existente para este ciclo e usuário
+    const { data: existing, error: fetchErr } = await supabase
+      .from('vision_statements')
+      .select('*')
+      .eq('cycle_id', cycleId)
+      .eq('user_id', userId)
+      .maybeSingle();
+
+    if (fetchErr && fetchErr.code !== 'PGRST116') {
+      console.error('[visionService] Erro ao buscar visão existente:', fetchErr);
+    }
+
+    const effectiveLongTerm = vision.longTermVision !== undefined 
+      ? vision.longTermVision 
+      : vision.threeToFiveYearDeclaration;
+
+    const payload: Record<string, any> = {
+      user_id: userId,
+      cycle_id: cycleId,
+      updated_at: new Date().toISOString()
     };
 
-    const { data, error } = await supabase
-      .from('vision_statements')
-      .upsert(payload, { onConflict: 'user_id,cycle_id', ignoreDuplicates: false }) // ensure constraint exists, or just use update if exists
-      // But wait, the schema doesn't have a unique constraint on (user_id, cycle_id) though it should.
-      // Let's just delete old and insert new, or use a query.
-      
-      // Let's just do an update if existing, or insert if not.
-      // Assuming upsert works if we query by id
-      .select()
-      .single();
-      
-      // Wait, since we don't have unique constraint, let's just do it manually:
-  },
-  
-  async saveVision(cycleId: string, userId: string, vision: Partial<VisionStatement>) {
-    const { data: existing } = await supabase.from('vision_statements').select('id').eq('cycle_id', cycleId).eq('user_id', userId).maybeSingle();
-    
-    const payload = {
-        user_id: userId,
-        cycle_id: cycleId,
-        headline: vision.headline !== undefined ? vision.headline : 'Minha Visão',
-        long_term_vision: vision.longTermVision,
-        cycle_vision: vision.cycleVision,
-        emotional_why: vision.emotionalWhy,
-        inaction_cost: vision.inactionCost,
-        last_read_date: vision.lastReadDate
-    };
+    if (vision.headline !== undefined) {
+      payload.headline = vision.headline;
+    } else if (!existing) {
+      payload.headline = 'Minha Visão Inspiradora';
+    }
+
+    if (effectiveLongTerm !== undefined) {
+      payload.long_term_vision = effectiveLongTerm;
+    }
+
+    if (vision.cycleVision !== undefined) {
+      payload.cycle_vision = vision.cycleVision;
+    }
+
+    if (vision.emotionalWhy !== undefined) {
+      payload.emotional_why = vision.emotionalWhy;
+    }
+
+    if (vision.inactionCost !== undefined) {
+      payload.inaction_cost = vision.inactionCost;
+    }
+
+    if (vision.lastReadDate !== undefined) {
+      payload.last_read_date = vision.lastReadDate;
+    }
 
     if (existing) {
-        const { data, error } = await supabase.from('vision_statements').update(payload).eq('id', existing.id).select().single();
-        if (error) throw error;
-        return data;
+      // Executa UPDATE estrito no registro existente para evitar duplicações
+      const { data, error } = await supabase
+        .from('vision_statements')
+        .update(payload)
+        .eq('id', existing.id)
+        .select()
+        .single();
+
+      if (error) throw error;
+      return data;
     } else {
-        const { data, error } = await supabase.from('vision_statements').insert(payload).select().single();
-        if (error) throw error;
-        return data;
+      // Executa INSERT apenas se ainda não existir
+      if (!payload.headline) {
+        payload.headline = 'Minha Visão Inspiradora';
+      }
+
+      const { data, error } = await supabase
+        .from('vision_statements')
+        .insert(payload)
+        .select()
+        .single();
+
+      if (error) throw error;
+      return data;
     }
   }
 };
