@@ -93,6 +93,27 @@ export interface GovernanceSettings {
   warnGoogleCalendarConflicts: boolean;
 }
 
+const DEFAULT_CYCLE: Cycle = {
+  id: 'c1',
+  number: 1,
+  name: 'Ciclo 01 • Q1 Execution',
+  currentWeek: 1,
+  currentDay: 1,
+  startDate: '2026-09-08',
+  endDate: '2026-12-01',
+  isSealed: false,
+  partnerName: '',
+  partnerWamScore: 0,
+};
+
+const DEFAULT_VISION: VisionStatement = {
+  headline: '',
+  longTermVision: '',
+  cycleVision: '',
+  emotionalWhy: '',
+  readToday: false,
+};
+
 const FocusFlowContext = createContext<FocusFlowContextType | undefined>(undefined);
 
 export const FocusFlowProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -520,12 +541,8 @@ export const FocusFlowProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   }
 
   // Fallback defaults se não houver dados no banco (para prevenir quebra de UI)
-  const safeCycle = cycle || {
-    id: 'c1', number: 1, name: 'Ciclo 01 • Q1 Execution', currentWeek: 1, currentDay: 1, startDate: '2026-09-08', endDate: '2026-12-01', isSealed: false, partnerName: '', partnerWamScore: 0
-  };
-  const safeVision = vision || {
-    headline: '', longTermVision: '', cycleVision: '', emotionalWhy: '', readToday: false
-  };
+  const safeCycle = cycle || DEFAULT_CYCLE;
+  const safeVision = vision || DEFAULT_VISION;
 
   return (
     <FocusFlowContext.Provider

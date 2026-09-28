@@ -34,12 +34,12 @@ export const EditVisionModal: React.FC<EditVisionModalProps> = ({
 
   useEffect(() => {
     if (isOpen) {
-      setLongTermVision(vision.longTermVision || vision.threeToFiveYearDeclaration || '');
-      setCycleVision(vision.cycleVision || '');
-      setEmotionalWhy(vision.emotionalWhy || '');
+      setLongTermVision(vision?.longTermVision || vision?.threeToFiveYearDeclaration || '');
+      setCycleVision(vision?.cycleVision || '');
+      setEmotionalWhy(vision?.emotionalWhy || '');
       setErrorMessage('');
     }
-  }, [isOpen, vision]);
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
