@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
@@ -15,6 +15,35 @@ export const LoginPage: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const destination = (location.state as any)?.from?.pathname || '/hoje';
+
+  // Captura erros de OAuth vindos de redirecionamentos da URL ou sessionStorage
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const searchParams = new URLSearchParams(window.location.search);
+    const hashString = window.location.hash.startsWith('#')
+      ? window.location.hash.substring(1)
+      : window.location.hash;
+    const hashParams = new URLSearchParams(hashString);
+
+    const urlErrorDesc =
+      searchParams.get('error_description') ||
+      hashParams.get('error_description') ||
+      searchParams.get('error') ||
+      hashParams.get('error');
+
+    const storedError = sessionStorage.getItem('ff:auth_error');
+
+    if (urlErrorDesc) {
+      setErrorMessage(`Falha na autenticação: ${decodeURIComponent(urlErrorDesc)}`);
+      if (window.history.replaceState) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    } else if (storedError) {
+      setErrorMessage(`Falha na autenticação: ${storedError}`);
+      sessionStorage.removeItem('ff:auth_error');
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -59,12 +88,22 @@ export const LoginPage: React.FC = () => {
   const handleGoogleLogin = async () => {
     setIsSubmitting(true);
     setErrorMessage('');
-    const res = await signInWithGoogle();
-    if (!res.success) {
+    try {
+      const res = await signInWithGoogle();
+      if (!res.success) {
+        setIsSubmitting(false);
+        setErrorMessage(res.error || 'Não foi possível conectar com o Google.');
+      } else {
+        // Se estiver em modo local / fallback sem redirecionamento externo
+        if (!isConfigured) {
+          setIsSubmitting(false);
+          navigate(destination, { replace: true });
+        }
+      }
+    } catch (err: any) {
       setIsSubmitting(false);
-      setErrorMessage(res.error || 'Não foi possível conectar com o Google.');
+      setErrorMessage(err.message || 'Erro inesperado ao conectar com o Google.');
     }
-    // Obs: Se tiver sucesso, o navegador é redirecionado externamente para a tela de autenticação do Google.
   };
 
   const handleGuestLogin = () => {
@@ -251,27 +290,36 @@ export const LoginPage: React.FC = () => {
           type="button"
           onClick={handleGoogleLogin}
           disabled={isSubmitting}
-          className="w-full py-2.5 bg-surface-container-lowest hover:bg-surface-container border border-surface-container text-on-surface font-semibold text-xs rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+          className="w-full py-2.5 bg-surface-container-lowest hover:bg-surface-container border border-surface-container text-on-surface font-semibold text-xs rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          <svg className="w-4 h-4" viewBox="0 0 24 24">
-            <path
-              fill="#4285F4"
-              d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.14z"
-            />
-            <path
-              fill="#34A853"
-              d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"
-            />
-            <path
-              fill="#FBBC05"
-              d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
-            />
-            <path
-              fill="#EA4335"
-              d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
-            />
-          </svg>
-          <span>Continuar com Google</span>
+          {isSubmitting ? (
+            <div className="flex items-center gap-2">
+              <span className="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+              <span>Conectando ao Google...</span>
+            </div>
+          ) : (
+            <>
+              <svg className="w-4 h-4" viewBox="0 0 24 24">
+                <path
+                  fill="#4285F4"
+                  d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.14z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                />
+              </svg>
+              <span>Continuar com Google</span>
+            </>
+          )}
         </button>
 
         {/* Acesso Instantâneo Modo Convidado */}

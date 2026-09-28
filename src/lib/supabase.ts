@@ -1,15 +1,18 @@
 import { createClient } from '@supabase/supabase-js';
 
+const defaultSupabaseUrl = 'https://horaaqlrerhgcmnffajr.supabase.co';
+const defaultSupabaseAnonKey = 'sb_publishable_m7AM1uWms7xo7hiQlTgHAg_s6FPc9SM';
+
 const supabaseUrl = (
   import.meta.env.VITE_SUPABASE_URL ||
   import.meta.env.SUPABASE_URL ||
-  ''
+  defaultSupabaseUrl
 ).trim();
 
 const supabaseAnonKey = (
   import.meta.env.VITE_SUPABASE_ANON_KEY ||
   import.meta.env.SUPABASE_PUBLISHABLE_KEY ||
-  ''
+  defaultSupabaseAnonKey
 ).trim();
 
 // Verifica se as credenciais fornecidas são válidas e não apenas placeholders

@@ -52,14 +52,48 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   useEffect(() => {
-    // Se o Supabase estiver configurado, escuta a sessão remota
+    // Se o Supabase estiver configurado, escuta a sessão remota e trata fluxo OAuth
     if (isSupabaseConfigured) {
-      const hasAuthCodeInUrl = typeof window !== 'undefined' && (
-        window.location.search.includes('code=') ||
-        window.location.hash.includes('access_token=') ||
-        window.location.hash.includes('error=') ||
-        window.location.search.includes('error=')
-      );
+      const searchParams = new URLSearchParams(window.location.search);
+      const hashString = window.location.hash.startsWith('#')
+        ? window.location.hash.substring(1)
+        : window.location.hash;
+      const hashParams = new URLSearchParams(hashString);
+
+      const code = searchParams.get('code');
+      const error = searchParams.get('error') || hashParams.get('error');
+      const errorDescription =
+        searchParams.get('error_description') ||
+        hashParams.get('error_description') ||
+        searchParams.get('error');
+
+      // Se o Google/Supabase retornou erro no redirecionamento:
+      if (error || errorDescription) {
+        console.error('[FocusFlow Auth] Erro detectado no retorno do OAuth:', error, errorDescription);
+        sessionStorage.setItem('ff:auth_error', decodeURIComponent(errorDescription || error || 'Erro de autenticação'));
+        setIsLoading(false);
+        if (typeof window !== 'undefined' && window.history.replaceState) {
+          window.history.replaceState({}, document.title, window.location.pathname);
+        }
+      }
+
+      // Se houver código PKCE para troca explícita na URL:
+      if (code) {
+        supabase.auth.exchangeCodeForSession(code).then(({ data, error: exchangeErr }) => {
+          if (exchangeErr) {
+            console.warn('[FocusFlow Auth] Falha na troca explícita de código PKCE (pode ter sido processado pelo listener):', exchangeErr.message);
+          } else if (data.session?.user) {
+            const authUser = mapSupabaseUser(data.session.user);
+            setSession(data.session);
+            setUser(authUser);
+            localStorage.setItem(LOCAL_STORAGE_USER_KEY, JSON.stringify(authUser));
+            setIsLoading(false);
+            if (typeof window !== 'undefined' && window.history.replaceState) {
+              window.history.replaceState({}, document.title, window.location.pathname);
+            }
+          }
+        });
+      }
 
       supabase.auth.getSession().then(({ data: { session } }) => {
         setSession(session);
@@ -68,12 +102,19 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setUser(authUser);
           localStorage.setItem(LOCAL_STORAGE_USER_KEY, JSON.stringify(authUser));
           setIsLoading(false);
+          if (code && typeof window !== 'undefined' && window.history.replaceState) {
+            window.history.replaceState({}, document.title, window.location.pathname);
+          }
         } else {
-          // Se houver código OAuth na URL, aguarda a resolução do onAuthStateChange
-          if (!hasAuthCodeInUrl) {
+          // Se não houver código OAuth pendente nem erro, recupera usuário do cache se existir
+          if (!code && !error) {
             const localUser = localStorage.getItem(LOCAL_STORAGE_USER_KEY);
             if (localUser) {
-              setUser(JSON.parse(localUser));
+              try {
+                setUser(JSON.parse(localUser));
+              } catch {
+                setUser(null);
+              }
             }
             setIsLoading(false);
           }
@@ -88,6 +129,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           const authUser = mapSupabaseUser(session.user);
           setUser(authUser);
           localStorage.setItem(LOCAL_STORAGE_USER_KEY, JSON.stringify(authUser));
+          if (typeof window !== 'undefined' && window.location.search.includes('code=')) {
+            window.history.replaceState({}, document.title, window.location.pathname);
+          }
         } else if (event === 'SIGNED_OUT') {
           setUser(null);
           localStorage.removeItem(LOCAL_STORAGE_USER_KEY);
@@ -95,12 +139,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsLoading(false);
       });
 
-      // Timeout de segurança para desbloquear a interface caso a troca OAuth falhe
+      // Timeout de segurança reduzido caso a troca de código demore
       let safetyTimer: any;
-      if (hasAuthCodeInUrl) {
+      if (code) {
         safetyTimer = setTimeout(() => {
           setIsLoading(false);
-        }, 5000);
+        }, 4000);
       }
 
       return () => {
@@ -201,13 +245,23 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const signInWithGoogle = async () => {
     try {
       if (isSupabaseConfigured) {
+        const origin = typeof window !== 'undefined' ? window.location.origin : '';
+        const redirectTo = `${origin}/hoje`;
+
         const { data, error } = await supabase.auth.signInWithOAuth({
           provider: 'google',
           options: {
-            redirectTo: window.location.origin + '/hoje',
+            redirectTo,
+            queryParams: {
+              access_type: 'offline',
+              prompt: 'select_account',
+            },
           },
         });
-        if (error) return { success: false, error: error.message };
+        if (error) {
+          console.error('[FocusFlow Auth] Erro signInWithOAuth:', error);
+          return { success: false, error: error.message };
+        }
         if (data?.url) {
           window.location.href = data.url;
         }
