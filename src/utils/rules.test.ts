@@ -13,8 +13,8 @@ describe('calculateWAM', () => {
 
   it('should correctly calculate 100% score (Gold)', () => {
     const tactics: Tactic[] = [
-      { id: '1', goalId: 'g1', title: 'A', isCompleted: true, daysOfWeek: ['seg'] },
-      { id: '2', goalId: 'g1', title: 'B', isCompleted: true, daysOfWeek: ['ter'] },
+      { id: '1', goalId: 'g1', title: 'A', isCompleted: true, daysOfWeek: ['seg'], isLeadIndicator: true },
+      { id: '2', goalId: 'g1', title: 'B', isCompleted: true, daysOfWeek: ['ter'], isLeadIndicator: true },
     ];
     const result = calculateWAM(tactics);
     expect(result.score).toBe(100);

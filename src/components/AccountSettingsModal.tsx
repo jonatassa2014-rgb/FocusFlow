@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useFocusFlow } from '../context/FocusFlowContext';
 import { useAuth } from '../context/AuthContext';
+import { healthService, HealthStatus } from '../services/health.service';
 
 interface AccountSettingsModalProps {
   isOpen: boolean;
@@ -11,6 +12,22 @@ export const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOp
   const { user } = useAuth();
   const { cycle, updateCycle, notifications } = useFocusFlow();
   const [partnerName, setPartnerName] = useState(cycle.partnerName);
+  const [health, setHealth] = useState<HealthStatus | null>(null);
+
+  const loadHealthStatus = async () => {
+    try {
+      const res = await healthService.checkHealth();
+      setHealth(res);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      loadHealthStatus();
+    }
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -135,6 +152,50 @@ export const AccountSettingsModal: React.FC<AccountSettingsModalProps> = ({ isOp
               <span className="material-symbols-outlined text-[18px]">download</span>
               Exportar JSON
             </button>
+          </section>
+
+          <hr className="border-surface-container" />
+
+          {/* Seção de Observabilidade & Saúde do Sistema (Fase 8) */}
+          <section className="space-y-4">
+            <div className="flex items-center justify-between">
+              <h3 className="font-title-md text-title-md font-semibold text-on-surface flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary text-[20px]">cloud_sync</span>
+                Saúde do Sistema & Nuvem
+              </h3>
+              <button
+                onClick={loadHealthStatus}
+                className="text-[12px] text-primary hover:underline flex items-center gap-1 font-medium"
+                type="button"
+              >
+                <span className="material-symbols-outlined text-[14px]">refresh</span>
+                Verificar
+              </button>
+            </div>
+            
+            <div className="bg-surface-container-low p-4 rounded-xl border border-surface-container space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="font-label-md text-on-surface">Supabase Backend</span>
+                <span className="flex items-center gap-1.5 text-label-sm font-bold text-green-700 bg-green-100 px-2.5 py-0.5 rounded-full">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  {health?.status === 'healthy' ? 'Operacional' : health?.status === 'degraded' ? 'Parcial' : 'Verificando...'}
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between text-body-sm text-on-surface-variant">
+                <span>Latência da Conexão</span>
+                <span className="font-mono text-on-surface font-medium">
+                  {health ? `${health.latencyMs} ms` : '...'}
+                </span>
+              </div>
+
+              <div className="flex items-center justify-between text-body-sm text-on-surface-variant">
+                <span>Usuário Autenticado</span>
+                <span className="font-mono text-on-surface text-[12px] truncate max-w-[200px]" title={user?.email}>
+                  {user?.email || 'Visitante Local'}
+                </span>
+              </div>
+            </div>
           </section>
 
         </div>

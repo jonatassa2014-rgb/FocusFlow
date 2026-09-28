@@ -26,7 +26,7 @@ export interface Tactic {
   estimatedMinutes?: number;
   isCompleted: boolean;
   completedAt?: string;
-  isLeadIndicator: boolean; // BR-03: Princípio Causal
+  isLeadIndicator?: boolean; // BR-03: Princípio Causal
 }
 
 export interface Cycle {

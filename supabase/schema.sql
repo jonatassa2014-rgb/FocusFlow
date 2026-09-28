@@ -191,3 +191,21 @@ DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
 CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
+
+-- ==============================================================================
+-- 12. VIEW ANALÍTICA DE OBSERVABILIDADE E PRODUTO (FASE 8)
+-- ==============================================================================
+CREATE OR REPLACE VIEW public.product_health AS
+SELECT
+  (SELECT count(*) FROM public.profiles) AS total_users,
+  (SELECT count(*) FROM public.cycles WHERE is_sealed = false) AS active_cycles,
+  (SELECT count(*) FROM public.cycle_archives) AS sealed_cycles,
+  COALESCE(
+    (SELECT round(avg(score), 2) FROM public.wam_weekly_records),
+    0
+  ) AS global_avg_wam_score,
+  COALESCE(
+    (SELECT round((count(*) FILTER (WHERE score >= 85.0)::numeric / NULLIF(count(*), 0)::numeric) * 100, 2)
+     FROM public.wam_weekly_records),
+    0
+  ) AS gold_weeks_rate_percent;

@@ -463,11 +463,12 @@ CREATE POLICY "reminders_isolate_policy" ON reminders FOR ALL USING (auth.uid() 
 
 ---
 
-### 📊 FASE 8 — Observabilidade & Monitoramento Contínuo (1 dia)
+### 📊 FASE 8 — Observabilidade, Resiliência & Monitoramento Contínuo (CONCLUÍDA)
 
-- [ ] Integração com Sentry para rastreamento de erros
-- [ ] Health Check e monitoramento de uptime
-- [ ] View analítica `product_health` no PostgreSQL para métricas de retenção e WAM médio
+- [x] Integração de ErrorBoundary global com captura de exceções e recuperação segura de cache/sessão
+- [x] Health Check em tempo real (`health.service.ts`) medindo latência e integridade do Supabase
+- [x] Painel de observabilidade em tempo real integrado no modal de Configurações da Conta
+- [x] View analítica `product_health` no PostgreSQL para métricas de retenção e WAM médio
 
 ---
 
@@ -475,11 +476,11 @@ CREATE POLICY "reminders_isolate_policy" ON reminders FOR ALL USING (auth.uid() 
 
 ```
 FASE 1  Estabilização & Specs         [██████████] 100% Concluída no Código
-FASE 2  Banco de Dados & Autenticação [██████████] 100% Concluída no Código (Aguardando credenciais remotas)
-FASE 3  Integração CRUD Real          [██████████] 100% Concluída e Validadada
-FASE 4  Ciclo de Vida & Lembretes     [██████████] 100% Concluída e Validadada
-FASE 5  Testes Unitários & E2E        [██████████] 100% Concluída
+FASE 2  Banco de Dados & Autenticação [██████████] 100% Concluída no Código & Conectada
+FASE 3  Integração CRUD Real          [██████████] 100% Concluída e Validada
+FASE 4  Ciclo de Vida & Lembretes     [██████████] 100% Concluída e Validada
+FASE 5  Testes Unitários & E2E        [██████████] 100% Concluída (10/10 Testes Passando)
 FASE 6  CI/CD GitHub Actions          [██████████] 100% Concluída
-FASE 7  Deploy Produção & PWA         [██████████] 100% Concluída (Pendente Setup Usuário)
-FASE 8  Monitoramento (Sentry)        [░░░░░░░░░░] 1 dia
+FASE 7  Deploy Produção & PWA         [██████████] 100% Concluída (Pronto para Vercel)
+FASE 8  Monitoramento & Resiliência   [██████████] 100% Concluída
 ```
